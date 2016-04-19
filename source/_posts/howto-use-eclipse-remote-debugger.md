@@ -7,7 +7,7 @@ tags:
   - maven
 categories:
   - howto
-  - eclipse
+  - coding
 date: 2014-08-13 14:58:20
 ---
 

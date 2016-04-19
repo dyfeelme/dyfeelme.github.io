@@ -1,5 +1,5 @@
 ---
-title: 打造自己的windows开发环境-chocolatey
+title: 打造自己的windows开发环境
 tags:
   - windows
   - 开发环境
@@ -8,7 +8,6 @@ tags:
 categories:
   - howto
   - windows
-  - choco
 date: 2015-12-11 14:16:12
 ---
 

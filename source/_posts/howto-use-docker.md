@@ -5,6 +5,7 @@ tags:
   - docker
 categories:
   - howto
+  - coding
 date: 2016-01-13 18:00:45
 ---
 
