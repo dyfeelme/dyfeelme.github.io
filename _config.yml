@@ -62,8 +62,31 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+plugins:
+  - hexo-generator-feed
+  - hexo-generator-sitemap
 ## Themes: https://hexo.io/themes/
 theme: jacman
+
+#sitemap
+sitemap:
+  path: sitemap.xml
+
+#atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+#markdown
+markdown:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
