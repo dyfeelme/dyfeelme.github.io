@@ -1,0 +1,712 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Rabbit Saying</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="dyfeelme">
+    
+
+    
+    <meta name="description" content="James&apos;s Blog.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rabbit Saying">
+<meta property="og:url" content="http://dyfeelme.github.io/page/2/index.html">
+<meta property="og:site_name" content="Rabbit Saying">
+<meta property="og:description" content="James&apos;s Blog.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rabbit Saying">
+<meta name="twitter:description" content="James&apos;s Blog.">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Rabbit Saying" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Rabbit Saying" title="Rabbit Saying"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Rabbit Saying">Rabbit Saying</a></h1>
+				<h2 class="blog-motto">兔言兔语</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:dyfeelme.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main">
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/07/17/learn-deep-java-jvm-part1/" title="深入学习JAVA虚拟机－垃圾回收算法" itemprop="url">深入学习JAVA虚拟机－垃圾回收算法</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="dyfeelme" target="_blank" itemprop="author">dyfeelme</a>
+		
+  <p class="article-time">
+    <time datetime="2014-07-17T14:30:15.000Z" itemprop="datePublished"> 发表于 2014-07-17</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>JAVA提供了自动垃圾回收管理机制来管理对象的生命周期，本文将对几种常见的算法进行简要介绍。</p>
+<h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><ul>
+<li>Mark-Sweep 标记－清除</li>
+<li>Copying 复制</li>
+<li>Mark-Compac 标记－整理</li>
+<li>Generational Collection 分代收集</li>
+</ul>
+<p><em>标记－清除</em> 算法是最基础的一种算法，通常通过“标记”和“清除”两个阶段，将需要进行回收的对象进行“标记”，标记完成后统一进行回收处理。这个算法主要存在两个不足：</p>
+<ol>
+<li>效率问题，标记和清除连个过程效率都不高。</li>
+<li>空间问题，通常进行标记和清除后会产生大量不连续的内存碎片，导致后期进行大对象分配时无法找到可用空间而触发不必要的GC动作。</li>
+</ol>
+<p><em>复制</em> 算法提高了 <em>标记－清除</em>算法的效率问题，主要通过将可用内存按容量分成大小相同的两块，每次选用其中一块进行对象内存分配，当内存用完的时候，就将存活的对象复制至另一块，然后将本块区域完全清理。这样使得每次只适用半块内存，所以显而易见的导致了容量浪费，成本变高。<br>另外，<em>复制</em>算法在对象存活率较高的情况下，由于每次复制很多对象，所以也会直接导致效率的就降低。</p>
+<p><em>标记－整理</em> 算法过程与 <em>标记－清除</em>类似，主要是通过标记对象后，将存活的对象想一端移动，然后对另一端内存进行清理，解决了“内存碎片”问题。</p>
+<p><em>分代收集</em> 算法作为目前商业虚拟机的主流算法，主要根据对象存活周期的不同将内存进行分块管理，一般是将Java堆分为新生代和老年代，根据IBM公司对JVM的专项研究表明，新生代中的对象98%是瞬息而亡的，所以HotSpot虚拟机磨人Eden和Survivor的大小比例是8:1，所以分代收集可以在新生代内存区域选用<em>复制</em>算法，而在老年代内存区域选择<em>标记－清除</em>或者<em>标记整理</em>进行回收。</p>
+<p>#小结#<br>本文主要介绍JVM常用垃圾回收算法，通过了解各种算法来达到对实际生产所遇到的JVM相关问题进行追踪－定位－解决，并且在开发编码过程中尽量迎合虚拟机特性，来提升运行效能。</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/java/">java</a>►<a class="article-category-link" href="/categories/java/jvm/">jvm</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/java/">java</a><a href="/tags/jvm/">jvm</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/07/17/learn-deep-java-jvm-part1/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/07/17/learn-deep-java-jvm-part1/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/04/14/howto-use-eclipse/" title="使用Eclipse IDE" itemprop="url">使用Eclipse IDE</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="dyfeelme" target="_blank" itemprop="author">dyfeelme</a>
+		
+  <p class="article-time">
+    <time datetime="2014-04-14T11:00:21.000Z" itemprop="datePublished"> 发表于 2014-04-14</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><h3 id="比较重要的快捷键"><a href="#比较重要的快捷键" class="headerlink" title="比较重要的快捷键"></a>比较重要的快捷键</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">代码助手:Ctrl+Space（简体中文操作系统是Alt+/）</span><br><span class="line">快速修正：Ctrl+1</span><br><span class="line">单词补全：Alt+/</span><br><span class="line">打开外部Java文档：Shift+F2</span><br><span class="line"></span><br><span class="line">显示搜索对话框：Ctrl+H</span><br><span class="line">快速Outline：Ctrl+O</span><br><span class="line">打开资源：Ctrl+Shift+R</span><br><span class="line">打开类型：Ctrl+Shift+T</span><br><span class="line">显示重构菜单：Alt+Shift+T</span><br><span class="line"></span><br><span class="line">上一个/下一个光标的位置：Alt+Left/Right </span><br><span class="line">上一个/下一个成员（成员对象或成员函数）：Ctrl+Shift+Up/Down</span><br><span class="line">选中闭合元素：Alt+Shift+Up/Down/Left/Right</span><br><span class="line">删除行：Ctrl+D</span><br><span class="line">在当前行上插入一行：Ctrl+Shift+Enter</span><br><span class="line">在当前行下插入一行： Shift+Enter</span><br><span class="line">上下移动选中的行：Alt+Up/Down</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">组织导入：Ctrl+Shift+O</span><br><span class="line"></span><br><span class="line">### 定位 ### </span><br><span class="line">```code</span><br><span class="line">2.1行内定位 </span><br><span class="line">行末/行首：End/Home</span><br><span class="line">前一个/后一个单词：Ctrl+Right/Left</span><br><span class="line">2.2文件内定位 </span><br><span class="line">跳到某行：Ctrl+L</span><br><span class="line">上下滚屏：Ctrl+Up/Down</span><br><span class="line">上一个/下一个成员（成员对象或成员函数）：Ctrl+Shift+Up/Down</span><br><span class="line">快速Outline：Ctrl+O </span><br><span class="line">2.3跨文件定位 </span><br><span class="line">打开声明：F3</span><br><span class="line">打开资源：Ctrl+Shift+R</span><br><span class="line">打开类型：Ctrl+Shift+T</span><br><span class="line">在workspace中搜索选中元素的声明：Ctrl+G</span><br><span class="line">在workspace中搜索选中的文本：Ctrl+Alt+G</span><br><span class="line">在workspace中搜索选中元素的引用：Ctrl+Shift+G</span><br><span class="line">打开调用层次结构：Ctrl+Alt+H</span><br><span class="line">快速层次结构：Ctrl+T</span><br><span class="line">反悔：Ctrl+Z</span><br><span class="line">2.4其它 </span><br><span class="line">上一个/下一个光标所在位置：Alt+Left/Right</span><br><span class="line">上一个编辑的位置：Ctrl+Q</span><br></pre></td></tr></table></figure>
+<h3 id="选中快捷键"><a href="#选中快捷键" class="headerlink" title="选中快捷键"></a>选中快捷键</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">3.1行内选中 </span><br><span class="line">选中到行末/行首：Shift+End/Home</span><br><span class="line">选中上一个/下一个单词：Ctrl+Shift+Left/Right</span><br><span class="line">3.2文件内选中 </span><br><span class="line">选中闭合元素：Alt+Shift+Up</span><br><span class="line">恢复到上一个选中：Alt+Shift+Down</span><br><span class="line">选中下一个/上一个元素：Alt+Shift+Right/Left</span><br></pre></td></tr></table></figure>
+<h3 id="定位-选中-操作同时"><a href="#定位-选中-操作同时" class="headerlink" title="定位/选中/操作同时"></a>定位/选中/操作同时</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">删除行：Ctrl+D</span><br><span class="line">删除下一个/上一个单词：Ctrl+Delete/Backspace</span><br><span class="line">删除到行末：Ctrl+Shift+Delete</span><br><span class="line">在当前行上插入一行：Ctrl+Shift+Enter</span><br><span class="line">在当前行下插入一行： Shift+Enter</span><br><span class="line">上下移动选中的行：Alt+Up/Down</span><br><span class="line">拷贝选中的行：Ctrl+Alt+Up/Down</span><br></pre></td></tr></table></figure>
+<h3 id="代码编辑"><a href="#代码编辑" class="headerlink" title="代码编辑"></a>代码编辑</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">保存：Ctrl+S</span><br><span class="line">保存所有：Ctrl+Shift+S</span><br><span class="line">下一个命中的项（搜索之后）：Ctrl+.</span><br><span class="line">注释：Ctrl+/</span><br><span class="line">添加导入：Ctrl+Shift+M</span><br><span class="line">显示快捷键帮助：Ctrl+Shift+L</span><br><span class="line">变为大/小写：Ctrl+Shift+X/Y</span><br></pre></td></tr></table></figure>
+<h3 id="代码重构"><a href="#代码重构" class="headerlink" title="代码重构"></a>代码重构</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">显示重构菜单：Alt+Shift+T</span><br><span class="line">重构-改变方法签名：Alt+Shift+C</span><br><span class="line">重构-移动：Alt+Shift+V</span><br><span class="line">重构-重命名：Alt+Shift+R</span><br></pre></td></tr></table></figure>
+<h3 id="编辑器、视图、透视图切换"><a href="#编辑器、视图、透视图切换" class="headerlink" title="编辑器、视图、透视图切换"></a>编辑器、视图、透视图切换</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">下一个编辑器：Ctrl+F6</span><br><span class="line">下一个视图：Ctrl+F7</span><br><span class="line">下一个透视图：Ctrl+F8</span><br><span class="line">最大化当前视图或编辑器：Ctrl+M</span><br><span class="line">激活编辑器：F12</span><br></pre></td></tr></table></figure>
+<h3 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">F5：Step Into（debug）</span><br><span class="line">F6：Step over（debug）</span><br><span class="line">F7：Step return（debug）</span><br><span class="line">F8：Resume（debug）</span><br><span class="line">F11：debug上一个应用（debug）</span><br></pre></td></tr></table></figure>
+<h3 id="方向键"><a href="#方向键" class="headerlink" title="方向键"></a>方向键</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Ctrl</span><br><span class="line">前一个/后一个单词：Ctrl+Right/Left</span><br><span class="line">上下滚屏：Ctrl+Up/Down</span><br><span class="line">Alt</span><br><span class="line">上一个/下一个光标的位置：Alt+Left/Right</span><br><span class="line">上下移动选中的行：Alt+Up/Down</span><br><span class="line">Shift</span><br><span class="line">选中上一个/下一个字符：Shift+Left/Right</span><br><span class="line">选中上一行/下一行（从当前光标位置开始）：Shift+Up/Down</span><br><span class="line">Ctrl+Shift</span><br><span class="line">上一个/下一个成员（成员对象或成员函数）：Ctrl+Shift+Up/Down</span><br><span class="line">选中上一个/下一个单词：Ctrl+Shift+Left/Right</span><br><span class="line">Alt+Shift</span><br><span class="line">选中闭合元素：Alt+Shift+Up</span><br><span class="line">恢复到上一个选中：Alt+Shift+Down</span><br><span class="line">选中下一个/上一个元素：Alt+Shift+Right/Left</span><br><span class="line">拷贝选中的行：Ctrl+Alt+Up/Down</span><br><span class="line">Ctrl+Alt</span><br><span class="line">拷贝选中的行：Ctrl+Alt+Up/Down</span><br></pre></td></tr></table></figure>
+<h3 id="F类快捷键"><a href="#F类快捷键" class="headerlink" title="F类快捷键"></a>F类快捷键</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">F2：显示提示/重命名</span><br><span class="line">F3：打开选中元素的声明</span><br><span class="line">F4：打开选中元素的类型继承结构</span><br><span class="line">F5：刷新</span><br><span class="line">F5：Step Into（debug）</span><br><span class="line">F6：Step over（debug）</span><br><span class="line">F7：Step return（debug）</span><br><span class="line">F8：Resume（debug）</span><br><span class="line">F11：debug上一个应用（debug）</span><br><span class="line">F12：激活编辑器</span><br></pre></td></tr></table></figure>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="安装方式"><a href="#安装方式" class="headerlink" title="安装方式"></a>安装方式</h3><p>常用的安装方式有三种</p>
+<ul>
+<li>link文件安装，需离线，推荐。</li>
+<li>将插件目录中features和plugins目录中文件分别拷贝至eclipse安装目录中同名目录中，需离线，不推荐。</li>
+<li>通过Eclipse Marketplace进行在线安装，需联网，推荐。</li>
+</ul>
+<p>普通插件插件推荐link方式<br>在eclipse安装目录新建links目录，编写xxx.link,内容如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">path=[插件绝对路径]，如C:/dev/eclipse-plugins/svn-1.8.22</span><br><span class="line">或者</span><br><span class="line">path=[相对路径]，如: ../eclipse-plugins/svn-1.8.22</span><br><span class="line">注：相对路径为eclipse执行文件目录</span><br></pre></td></tr></table></figure></p>
+<h3 id="theme-color"><a href="#theme-color" class="headerlink" title="theme color"></a>theme color</h3><p>Update Site:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://eclipse-color-theme.github.com/update</span><br></pre></td></tr></table></figure></p>
+<p>效果图<br><img src="/images/howto-use-eclipse-colorthemes.png" alt="colorthemes"></p>
+<h3 id="subclipse"><a href="#subclipse" class="headerlink" title="subclipse"></a>subclipse</h3><p>SVN代码管理的集成插件，下载地址：<a href=""></a></p>
+<h3 id="propedit"><a href="#propedit" class="headerlink" title="propedit"></a>propedit</h3><p>Java Properties文件编辑插件<br>Update Site:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://propedit.sourceforge.jp/eclipse/updates/</span><br></pre></td></tr></table></figure></p>
+<h3 id="checkstyle"><a href="#checkstyle" class="headerlink" title="checkstyle"></a>checkstyle</h3><p><img src="http://checkstyle.sourceforge.net/images/header-checkstyle-logo.png" alt="checkstyle"><br>官网:<a href="http://checkstyle.sourceforge.net/" target="_blank" rel="external">http://checkstyle.sourceforge.net/</a></p>
+<h3 id="emmet"><a href="#emmet" class="headerlink" title="emmet"></a>emmet</h3><p><img src="http://emmet.io/-/4076541266/i/logo.svg" alt="emmet"><br>官网：<a href="http://emmet.io/" target="_blank" rel="external">http://emmet.io/</a></p>
+<blockquote>
+<p>Emmet is a plugin for many popular text editors which greatly improves HTML &amp; CSS workflow</p>
+</blockquote>
+<p>Updte Site:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://emmet.io/eclipse/updates/</span><br></pre></td></tr></table></figure></p>
+<p>注意：以上插件均可通过Eclipse Marketplace安装</p>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><ul>
+<li>eclipse 4.4以后不支持maven2 版本，所以想要打包只能在系统命令行也执行。</li>
+</ul>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/howto/">howto</a>►<a class="article-category-link" href="/categories/howto/coding/">coding</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/eclipse/">eclipse</a><a href="/tags/java/">java</a><a href="/tags/howto/">howto</a><a href="/tags/ide/">ide</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2014/04/14/howto-use-eclipse/#comments" class="ds-thread-count comments-count-link" data-thread-key="2014/04/14/howto-use-eclipse/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2012/03/13/a-piece-of-code-char2num/" title="代码片段-字母转数字" itemprop="url">代码片段-字母转数字</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="dyfeelme" target="_blank" itemprop="author">dyfeelme</a>
+		
+  <p class="article-time">
+    <time datetime="2012-03-13T07:39:54.000Z" itemprop="datePublished"> 发表于 2012-03-13</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>本工具类可以匹配字符串中字母，并将其转换为数字，反之可行，适用于小范围查找替换。</p>
+<h2 id="大写字母转数字工具类"><a href="#大写字母转数字工具类" class="headerlink" title="大写字母转数字工具类"></a>大写字母转数字工具类</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">public static String char2num(String code)&#123;</span><br><span class="line">	Pattern pat = Pattern.compile(REG_ALL_LETTERS);</span><br><span class="line">	Matcher mat = pat.matcher(code);</span><br><span class="line">	</span><br><span class="line">	//遍历所有匹配项</span><br><span class="line">	StringBuffer sb = new StringBuffer();</span><br><span class="line">	while(mat.find())&#123;</span><br><span class="line">		mat.appendReplacement(sb,c2i(mat.group()));</span><br><span class="line">	&#125;</span><br><span class="line">	mat.appendTail(sb);</span><br><span class="line"></span><br><span class="line">	return sb.toString();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private static String c2i()&#123;</span><br><span class="line">	int i = c.charAt(0) - NUM_C2I;</span><br><span class="line">	return Integer.toString(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/coding/">coding</a>►<a class="article-category-link" href="/categories/coding/java/">java</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/java/">java</a><a href="/tags/util/">util</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2012/03/13/a-piece-of-code-char2num/#comments" class="ds-thread-count comments-count-link" data-thread-key="2012/03/13/a-piece-of-code-char2num/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+
+  <nav id="page-nav" class="clearfix">
+    <a class="extend prev" rel="prev" href="/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="https://github.com/dyfeelme" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/coding/" title="coding">coding<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/howto/coding/" title="coding">coding<sup>3</sup></a></li>
+		  
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/stackoverflow/git/" title="git">git<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/coding/git/" title="git">git<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/howto/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/howto/" title="howto">howto<sup>5</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/java/" title="java">java<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/coding/java/" title="java">java<sup>1</sup></a></li>
+		  
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/java/jvm/" title="jvm">jvm<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/stackoverflow/jvm/" title="jvm">jvm<sup>1</sup></a></li>
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/stackoverflow/" title="stackoverflow">stackoverflow<sup>3</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/howto/windows/" title="windows">windows<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/java/" title="java">java<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/git/" title="git">git<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/stackoverflow/" title="stackoverflow">stackoverflow<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/eclipse/" title="eclipse">eclipse<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/howto/" title="howto">howto<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/jvm/" title="jvm">jvm<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/ide/" title="ide">ide<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/deep/" title="deep">deep<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/debug/" title="debug">debug<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/jpda/" title="jpda">jpda<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/blog/" title="blog">blog<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/docker/" title="docker">docker<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/windows/" title="windows">windows<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/开发环境/" title="开发环境">开发环境<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/dotfiles/" title="dotfiles">dotfiles<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/choco/" title="choco">choco<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/util/" title="util">util<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/http2/" title="http2">http2<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/maven/" title="maven">maven<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://github.com" target="_blank" title="开源项目的'大众点评'">Github</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Good Good Study,Day Day Up! <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/dyfeelme" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/https://github.com/dyfeelme" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:dyfeelme@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 
+		
+		<a href="/about" target="_blank" title="dyfeelme">dyfeelme</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+ </html>

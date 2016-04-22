@@ -1,0 +1,682 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>打造自己的windows开发环境 | Rabbit Saying</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="dyfeelme">
+    
+
+    
+    <meta name="description" content="简介
+Chocolatey NuGet is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind. 喜大普奔的记下这个良心之作-chocolatey。
+
+安装打开CMD命令提示符，执行以下命令1@powershell -NoProfile -ExecutionPolicy Bypass -">
+<meta property="og:type" content="article">
+<meta property="og:title" content="打造自己的windows开发环境">
+<meta property="og:url" content="http://dyfeelme.github.io/2015/12/11/howto-use-windows-chocolatey/index.html">
+<meta property="og:site_name" content="Rabbit Saying">
+<meta property="og:description" content="简介
+Chocolatey NuGet is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind. 喜大普奔的记下这个良心之作-chocolatey。
+
+安装打开CMD命令提示符，执行以下命令1@powershell -NoProfile -ExecutionPolicy Bypass -">
+<meta property="og:image" content="http://dyfeelme.github.io/images/howto-use-windows-choco-env.png">
+<meta property="og:updated_time" content="2016-04-21T06:44:23.409Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="打造自己的windows开发环境">
+<meta name="twitter:description" content="简介
+Chocolatey NuGet is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind. 喜大普奔的记下这个良心之作-chocolatey。
+
+安装打开CMD命令提示符，执行以下命令1@powershell -NoProfile -ExecutionPolicy Bypass -">
+<meta name="twitter:image" content="http://dyfeelme.github.io/images/howto-use-windows-choco-env.png">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Rabbit Saying" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Rabbit Saying" title="Rabbit Saying"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Rabbit Saying">Rabbit Saying</a></h1>
+				<h2 class="blog-motto">兔言兔语</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:dyfeelme.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/11/howto-use-windows-chocolatey/" title="打造自己的windows开发环境" itemprop="url">打造自己的windows开发环境</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="dyfeelme" target="_blank" itemprop="author">dyfeelme</a>
+		
+  <p class="article-time">
+    <time datetime="2015-12-11T06:16:12.000Z" itemprop="datePublished"> 发表于 2015-12-11</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命令概览"><span class="toc-number">3.</span> <span class="toc-text">命令概览</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常用命令"><span class="toc-number">3.1.</span> <span class="toc-text">常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">4.</span> <span class="toc-text">配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#进阶"><span class="toc-number">5.</span> <span class="toc-text">进阶</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小结"><span class="toc-number">6.</span> <span class="toc-text">小结</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>Chocolatey NuGet is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind.<br> 喜大普奔的记下这个良心之作-chocolatey。</p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>打开CMD命令提示符，执行以下命令<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object <span class="built_in">net</span>.webclient).DownloadString('https://chocolatey.org/install.ps1'))" &amp;&amp; <span class="built_in">SET</span> <span class="built_in">PATH</span>=<span class="variable">%PATH%</span>;<span class="variable">%ALLUSERSPROFILE%</span>\chocolatey\bin</span><br></pre></td></tr></table></figure></p>
+<p>或者打开PowerShell窗口，执行以下命令<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iex ((<span class="built_in">new-object</span> net.webclient).DownloadString(<span class="string">'https://chocolatey.org/install.ps1'</span>))</span><br></pre></td></tr></table></figure></p>
+<p>注意：执行之前请设置powershell执行权限,通过管理员身份启动powershell执行环境，输入如下命令：<br><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Set-ExecutionPolicy</span> RemoteSigned</span><br></pre></td></tr></table></figure></p>
+<h2 id="命令概览"><a href="#命令概览" class="headerlink" title="命令概览"></a>命令概览</h2><p>输入choco –help打印命令<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">This is a listing of all of the different things you can pass to choco.</span><br><span class="line"></span><br><span class="line">Commands</span><br><span class="line"></span><br><span class="line"> * list - lists remote or local packages</span><br><span class="line"> * search - searches remote or local packages (alias <span class="keyword">for</span> list)</span><br><span class="line"> * install - installs packages from various sources</span><br><span class="line"> * version - [DEPRECATED] will be removed <span class="keyword">in</span> v1 - use `cup &lt;pkg|all&gt; -whatif` instead</span><br><span class="line"> * pin - suppress upgrades to a package</span><br><span class="line"> * update - [DEPRECATED] RESERVED <span class="keyword">for</span> future use (you are looking <span class="keyword">for</span> upgrade, these are <span class="keyword">not</span> the droids you are looking <span class="keyword">for</span>)</span><br><span class="line"> * upgrade - upgrades packages from various sources</span><br><span class="line"> * outdated - retrieves packages that are outdated. Similar to upgrade all --noop</span><br><span class="line"> * uninstall - uninstalls a package</span><br><span class="line"> * source - view and configure default sources</span><br><span class="line"> * sources - view and configure default sources (alias <span class="keyword">for</span> source)</span><br><span class="line"> * feature - view and configure choco features</span><br><span class="line"> * features - view and configure choco features (alias <span class="keyword">for</span> feature)</span><br><span class="line"> * unpackself - have chocolatey <span class="built_in">set</span> it self up</span><br><span class="line"> * pack - packages up a nuspec to a compiled nupkg</span><br><span class="line"> * push - pushes a compiled nupkg</span><br><span class="line"> * new - generates files necessary <span class="keyword">for</span> a chocolatey package</span><br><span class="line"> * apikey - retrieves or saves an apikey <span class="keyword">for</span> a particular source</span><br><span class="line"> * setapikey - retrieves or saves an apikey <span class="keyword">for</span> a particular source (alias <span class="keyword">for</span> apikey)</span><br><span class="line"> * config - Retrieve and configure config file settings</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Please run chocolatey with `choco command -<span class="built_in">help</span>` <span class="keyword">for</span> specific <span class="built_in">help</span> on </span><br><span class="line"> each command.</span><br><span class="line"></span><br><span class="line">How To Pass Options / Switches</span><br><span class="line"></span><br><span class="line">You can pass options and switches <span class="keyword">in</span> the following ways:</span><br><span class="line"></span><br><span class="line"> * `-`, `/`, or `--` (one character switches should <span class="keyword">not</span> use `--`)</span><br><span class="line"> * **Option Bundling / Bundled Options**: One character switches can be</span><br><span class="line">   bundled. e.g. `-d` (debug), `-f` (force), `-v` (verbose), and `-y` </span><br><span class="line">   (confirm yes) can be bundled as `-dfvy`.</span><br><span class="line"> * ***Note:*** <span class="keyword">If</span> `debug` or `verbose` are bundled with local options </span><br><span class="line">   (<span class="keyword">not</span> the global ones above), some logging may <span class="keyword">not</span> show up until after</span><br><span class="line">   the local options are parsed.</span><br><span class="line"> * **Use Equals**: You can also include or <span class="keyword">not</span> include an equals sign </span><br><span class="line">   `=` between options and values.</span><br><span class="line"> * **Quote Values**: When you need to quote things, such as when using </span><br><span class="line">   spaces, please use apostrophes (`'value'`). <span class="keyword">In</span> <span class="built_in">cmd</span>.exe you may be </span><br><span class="line">   able to use just double quotes (`"value"`) but <span class="keyword">in</span> powershell.exe </span><br><span class="line">   you may need to either escape the quotes with backticks </span><br><span class="line">   (`` `"value`" ``) or use a combination of double quotes and </span><br><span class="line">   apostrophes (`"'value'"`). This is due to the hand off to </span><br><span class="line">   PowerShell - it seems to strip off the outer <span class="built_in">set</span> of quotes.</span><br><span class="line"> * Options and switches apply to all items passed, so <span class="keyword">if</span> you are </span><br><span class="line">   installing multiple packages, and you use `--version=<span class="number">1</span>.<span class="number">0</span>.<span class="number">0</span>`, choco </span><br><span class="line">   is going to look <span class="keyword">for</span> and try to install version <span class="number">1</span>.<span class="number">0</span>.<span class="number">0</span> of every </span><br><span class="line">   package passed. So please split out multiple package calls when </span><br><span class="line">   wanting to pass specific options.</span><br><span class="line"></span><br><span class="line">Default Options and Switches</span><br></pre></td></tr></table></figure></p>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><p>检索远程可用包<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco search ruby</span><br></pre></td></tr></table></figure></p>
+<p>安装软件<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cinst ruby -y</span><br><span class="line">choco install ruby -y</span><br><span class="line">choco install ruby -y --force</span><br></pre></td></tr></table></figure></p>
+<p>卸载软件<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco uninstall ruby</span><br></pre></td></tr></table></figure></p>
+<p>配置<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">choco config list</span><br><span class="line">choco config get key</span><br><span class="line">choco config key value</span><br></pre></td></tr></table></figure></p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>配置包安装路径<br>可以通过设置环境变量ChocolateyBinRoot来改变,如图<br><img src="/images/howto-use-windows-choco-env.png" alt="Setting"><br>配置包缓存路径<br>可以通过运行以下命令<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">choco config <span class="built_in">set</span> cacheLocation [<span class="built_in">path</span>]</span><br></pre></td></tr></table></figure></p>
+<p>配置代理<br>可以通过运行以下命令<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">choco config <span class="built_in">set</span> proxy [url:port]</span><br><span class="line">choco config <span class="built_in">set</span> proxyUser [username]</span><br><span class="line">choco config <span class="built_in">set</span> proxyPassword [password]</span><br></pre></td></tr></table></figure></p>
+<p><a href="https://github.com/chocolatey/choco/wiki/CommandsConfig" target="_blank" rel="external">更多</a></p>
+<h2 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h2><p>分享我自己的环境初始化脚本，参考官方文档：<br>文件名：setup.psl<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line">function Install-NeededFor &#123;</span><br><span class="line">param(</span><br><span class="line">   [string] $packageName = &apos;&apos;</span><br><span class="line">  ,[bool] $defaultAnswer = $true</span><br><span class="line">)</span><br><span class="line">  if ($packageName -eq &apos;&apos;) &#123;return $false&#125;</span><br><span class="line"></span><br><span class="line">  $yes = &apos;6&apos;</span><br><span class="line">  $no = &apos;7&apos;</span><br><span class="line">  $msgBoxTimeout=&apos;-1&apos;</span><br><span class="line">  $defaultAnswerDisplay = &apos;Yes&apos;</span><br><span class="line">  $buttonType = 0x4;</span><br><span class="line">  if (!$defaultAnswer) &#123; $defaultAnswerDisplay = &apos;No&apos;; $buttonType= 0x104;&#125;</span><br><span class="line"></span><br><span class="line">  $answer = $msgBoxTimeout</span><br><span class="line">  try &#123;</span><br><span class="line">    $timeout = 10</span><br><span class="line">    $question = &quot;Do you need to install $($packageName)? Defaults to `&apos;$defaultAnswerDisplay`&apos; after $timeout seconds&quot;</span><br><span class="line">    $msgBox = New-Object -ComObject WScript.Shell</span><br><span class="line">    $answer = $msgBox.Popup($question, $timeout, &quot;Install $packageName&quot;, $buttonType)</span><br><span class="line">  &#125;</span><br><span class="line">  catch &#123;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if ($answer -eq $yes -or ($answer -eq $msgBoxTimeout -and $defaultAnswer -eq $true)) &#123;</span><br><span class="line">    write-host &quot;Installing $packageName&quot;</span><br><span class="line">    return $true</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  write-host &quot;Not installing $packageName&quot;</span><br><span class="line">  return $false</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># Install Chocolatey</span><br><span class="line">if (Install-NeededFor &apos;chocolatey&apos;) &#123;</span><br><span class="line">  iex ((new-object net.webclient).DownloadString(&apos;http://chocolatey.org/install.ps1&apos;))</span><br><span class="line">  #set choco</span><br><span class="line">  $cacheRoot = &apos;D:\cache&apos;</span><br><span class="line">  setx CacheRoot $cacheRoot</span><br><span class="line">  $cachePath = Join-Path $cacheRoot  &apos;chocolatey&apos;</span><br><span class="line">  choco config set cacheLocation $cachePath</span><br><span class="line">  #set system env</span><br><span class="line">  $chocoBinRoot = &apos;C:\ChocoBinRoot&apos;</span><br><span class="line">  setx ChocolateyBinRoot $chocoBinRoot</span><br><span class="line">  if (!(Test-Path $chocoBinRoot)) &#123;</span><br><span class="line">    md $chocoBinRoot</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if (Install-NeededFor &apos;chocolateygui&apos;) &#123;</span><br><span class="line">  cinst chocolateygui -y</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># install nuget, ruby.devkit, and ruby if they are missing</span><br><span class="line">cinst nuget.commandline -y</span><br><span class="line"></span><br><span class="line">if (Install-NeededFor &apos;ruby / ruby devkit&apos;) &#123;</span><br><span class="line">  cinst ruby -version 2.2.2 -y</span><br><span class="line">  cinst ruby2.devkit -y</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># restore the nuget packages</span><br><span class="line">$nugetConfigs = Get-ChildItem &apos;.\\&apos; -Recurse | ?&#123;$_.name -match &quot;packages\\.config&quot;&#125; | select</span><br><span class="line">foreach ($nugetConfig in $nugetConfigs) &#123;</span><br><span class="line">  Write-Host &quot;restoring packages from $($nugetConfig.FullName)&quot;</span><br><span class="line">  nuget install $($nugetConfig.FullName) /OutputDirectory packages</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>调用以上脚本<br>文件名：start.cmd<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">SET DIR=%~dp0%</span><br><span class="line">@PowerShell -NoProfile -ExecutionPolicy unrestricted -Command &quot;&amp; &apos;%DIR%setup.ps1&apos; %*&quot;</span><br><span class="line">pause</span><br></pre></td></tr></table></figure></p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>不说啦，只能帮你到这儿了。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/howto/">howto</a>►<a class="article-category-link" href="/categories/howto/windows/">windows</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/windows/">windows</a><a href="/tags/开发环境/">开发环境</a><a href="/tags/dotfiles/">dotfiles</a><a href="/tags/choco/">choco</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://dyfeelme.github.io/2015/12/11/howto-use-windows-chocolatey/" data-title="打造自己的windows开发环境 | Rabbit Saying" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/01/13/howto-use-docker/" title="Docker 入门">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Docker 入门</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/07/13/stack-overflow-jvm-memory-leak/"  title="JVM内存溢出相关问题">
+ <strong>下一篇：</strong><br/> 
+ <span>JVM内存溢出相关问题
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/12/11/howto-use-windows-chocolatey/" data-title="打造自己的windows开发环境" data-url="http://dyfeelme.github.io/2015/12/11/howto-use-windows-chocolatey/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#命令概览"><span class="toc-number">3.</span> <span class="toc-text">命令概览</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常用命令"><span class="toc-number">3.1.</span> <span class="toc-text">常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">4.</span> <span class="toc-text">配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#进阶"><span class="toc-number">5.</span> <span class="toc-text">进阶</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#小结"><span class="toc-number">6.</span> <span class="toc-text">小结</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="github-card">
+<p class="asidetitle">Github 名片</p>
+<div class="github-card" data-github="https://github.com/dyfeelme" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/coding/" title="coding">coding<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/howto/coding/" title="coding">coding<sup>3</sup></a></li>
+		  
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/stackoverflow/git/" title="git">git<sup>2</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/coding/git/" title="git">git<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/howto/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/howto/" title="howto">howto<sup>5</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/java/" title="java">java<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/coding/java/" title="java">java<sup>1</sup></a></li>
+		  
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/java/jvm/" title="jvm">jvm<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/stackoverflow/jvm/" title="jvm">jvm<sup>1</sup></a></li>
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/stackoverflow/" title="stackoverflow">stackoverflow<sup>3</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/howto/windows/" title="windows">windows<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/java/" title="java">java<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/git/" title="git">git<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/stackoverflow/" title="stackoverflow">stackoverflow<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/eclipse/" title="eclipse">eclipse<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/howto/" title="howto">howto<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/jvm/" title="jvm">jvm<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/ide/" title="ide">ide<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/deep/" title="deep">deep<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/debug/" title="debug">debug<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/jpda/" title="jpda">jpda<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/blog/" title="blog">blog<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/docker/" title="docker">docker<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/windows/" title="windows">windows<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/开发环境/" title="开发环境">开发环境<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/dotfiles/" title="dotfiles">dotfiles<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/choco/" title="choco">choco<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/util/" title="util">util<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/http2/" title="http2">http2<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/maven/" title="maven">maven<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://github.com" target="_blank" title="开源项目的'大众点评'">Github</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=null&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Good Good Study,Day Day Up! <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/dyfeelme" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/https://github.com/dyfeelme" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:dyfeelme@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 
+		
+		<a href="/about" target="_blank" title="dyfeelme">dyfeelme</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"dyfeelme"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
