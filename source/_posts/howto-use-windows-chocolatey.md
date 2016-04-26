@@ -14,7 +14,7 @@ date: 2015-12-11 14:16:12
 
 ## 简介 ##
  > Chocolatey NuGet is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind.
- 喜大普奔的记下这个良心之作-chocolatey。
+ 喜大普奔的记下这个良心之作[chocolatey](https://chocolatey.org/)。
 
 ## 安装 ##
 
