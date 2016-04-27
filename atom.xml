@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dyfeelme.github.io/"/>
-  <updated>2016-04-21T06:44:23.412Z</updated>
+  <updated>2016-04-27T01:36:26.655Z</updated>
   <id>http://dyfeelme.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>深入学习GIT版本控制</title>
-    <link href="http://dyfeelme.github.io/2016/04/19/learn-deep-for-git/"/>
-    <id>http://dyfeelme.github.io/2016/04/19/learn-deep-for-git/</id>
+    <title>版本控制工具-Git</title>
+    <link href="http://dyfeelme.github.io/2016/04/19/howto-use-git/"/>
+    <id>http://dyfeelme.github.io/2016/04/19/howto-use-git/</id>
     <published>2016-04-19T01:18:53.000Z</published>
-    <updated>2016-04-21T06:44:23.412Z</updated>
+    <updated>2016-04-27T01:36:26.655Z</updated>
     
     <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;Git&lt;/p&gt;
 &lt;h2 id=&quot;分布式版本控制体系&quot;&gt;&lt;a href=&quot;#分布式版本控制体系&quot; class=&quot;headerlink&quot; title=&quot;分布式版本控制体系&quot;&gt;&lt;/a&gt;分布式版本控制体系&lt;/h2&gt;&lt;h2 id=&quot;常用命令&quot;&gt;&lt;a href=&quot;#常用命令&quot; class=&quot;headerlink&quot; title=&quot;常用命令&quot;&gt;&lt;/a&gt;常用命令&lt;/h2&gt;&lt;h2 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h2&gt;&lt;h2 id=&quot;分支&quot;&gt;&lt;a href=&quot;#分支&quot; class=&quot;headerlink&quot; title=&quot;分支&quot;&gt;&lt;/a&gt;分支&lt;/h2&gt;&lt;h2 id=&quot;合并&quot;&gt;&lt;a href=&quot;#合并&quot; class=&quot;headerlink&quot; title=&quot;合并&quot;&gt;&lt;/a&gt;合并&lt;/h2&gt;&lt;h2 id=&quot;进阶&quot;&gt;&lt;a href=&quot;#进阶&quot; class=&quot;headerlink&quot; title=&quot;进阶&quot;&gt;&lt;/a&gt;进阶&lt;/h2&gt;&lt;h2 id=&quot;小结&quot;&gt;&lt;a href=&quot;#小结&quot; class=&quot;headerlink&quot; title=&quot;小结&quot;&gt;&lt;/a&gt;小结&lt;/h2&gt;</content>
@@ -32,12 +32,10 @@
     
     </summary>
     
-      <category term="coding" scheme="http://dyfeelme.github.io/categories/coding/"/>
-    
-      <category term="git" scheme="http://dyfeelme.github.io/categories/coding/git/"/>
+      <category term="版本控制" scheme="http://dyfeelme.github.io/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
     
-      <category term="deep" scheme="http://dyfeelme.github.io/tags/deep/"/>
+      <category term="版本控制" scheme="http://dyfeelme.github.io/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/"/>
     
       <category term="git" scheme="http://dyfeelme.github.io/tags/git/"/>
     
@@ -100,7 +98,7 @@
     <link href="http://dyfeelme.github.io/2016/04/12/about-rabbit-saying/"/>
     <id>http://dyfeelme.github.io/2016/04/12/about-rabbit-saying/</id>
     <published>2016-04-12T15:44:15.000Z</published>
-    <updated>2016-04-21T06:44:23.395Z</updated>
+    <updated>2016-04-27T01:32:31.306Z</updated>
     
     <content type="html">&lt;h2 id=&quot;勉强为序&quot;&gt;&lt;a href=&quot;#勉强为序&quot; class=&quot;headerlink&quot; title=&quot;勉强为序&quot;&gt;&lt;/a&gt;勉强为序&lt;/h2&gt;</content>
     
@@ -110,6 +108,49 @@
     
     </summary>
     
+      <category term="blog" scheme="http://dyfeelme.github.io/categories/blog/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows终端神器Cmder</title>
+    <link href="http://dyfeelme.github.io/2016/03/26/howto-use-windows-cmder/"/>
+    <id>http://dyfeelme.github.io/2016/03/26/howto-use-windows-cmder/</id>
+    <published>2016-03-26T02:08:57.000Z</published>
+    <updated>2016-04-27T01:34:03.718Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/cmderdev/cmder&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Cmder&lt;/a&gt;作为Windows命令提示符的替代者，可谓神级应用，没有之一。&lt;br&gt;当然它是基于开源神器ConEmu的，也算是集大成者吧。&lt;br&gt;所以如果你还没有转向macos,或linux之流,拥有如iTerm2之类的终端神器，&lt;br&gt;那cmder你值得拥有。&lt;/p&gt;
+&lt;h2 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot; class=&quot;headerlink&quot; title=&quot;快捷键&quot;&gt;&lt;/a&gt;快捷键&lt;/h2&gt;&lt;p&gt;作为神器，你当然必须要知道驾驭它的要领，也就是快捷键，下面列出了几个最常用或者最酷炫的快捷键&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + `  [全局快捷键] 显示或隐藏Cmder至任务栏&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + t  新建一个Tab页，带选项&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Alt + enter 全屏切换&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Ctrl + w 关闭当前Tab,会弹出提示，确认关闭&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;更多请查看&lt;a href=&quot;http://cmder.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h2&gt;&lt;p&gt;邮件标题栏，或者使用快捷键Win+Alt+p打开设置面板，如图：&lt;br&gt;&lt;img src=&quot;../images/howto-use-windows-cmder-setting.png&quot; alt=&quot;Setting&quot;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;添加自定义Task&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Startup -&amp;gt; Tasks 点击’+’,添加一个默认的Task。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;设置环境变量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Startup -&amp;gt; Environment 在面板逐行添加环境变量。&lt;/p&gt;
+&lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;版本1.2.9 对 Virtualbox 5.0.16 可能 以上不兼容，具体原因不详，换用1.3.0beta版解决。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/cmderdev/cmder&quot; target=&quot;_blank&quot; rel=&quot;exter
+    
+    </summary>
+    
+      <category term="开发环境" scheme="http://dyfeelme.github.io/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    
+      <category term="windows" scheme="http://dyfeelme.github.io/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/windows/"/>
+    
+    
+      <category term="windows" scheme="http://dyfeelme.github.io/tags/windows/"/>
+    
+      <category term="开发环境" scheme="http://dyfeelme.github.io/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    
+      <category term="cmd" scheme="http://dyfeelme.github.io/tags/cmd/"/>
     
   </entry>
   
@@ -118,7 +159,7 @@
     <link href="http://dyfeelme.github.io/2016/02/16/howto-use-hexo-with-github-pages/"/>
     <id>http://dyfeelme.github.io/2016/02/16/howto-use-hexo-with-github-pages/</id>
     <published>2016-02-16T15:58:36.000Z</published>
-    <updated>2016-04-21T06:44:23.405Z</updated>
+    <updated>2016-04-27T01:32:18.682Z</updated>
     
     <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://hexo.io/logo.svg&quot; alt=&quot;hexo&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;初始化&quot;&gt;&lt;a href=&quot;#初始化&quot; class=&quot;headerlink&quot; title=&quot;初始化&quot;&gt;&lt;/a&gt;初始化&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -144,9 +185,9 @@
     
     </summary>
     
-      <category term="howto" scheme="http://dyfeelme.github.io/categories/howto/"/>
+      <category term="blog" scheme="http://dyfeelme.github.io/categories/blog/"/>
     
-      <category term="hexo" scheme="http://dyfeelme.github.io/categories/howto/hexo/"/>
+      <category term="hexo" scheme="http://dyfeelme.github.io/categories/blog/hexo/"/>
     
     
       <category term="hexo" scheme="http://dyfeelme.github.io/tags/hexo/"/>
@@ -158,11 +199,58 @@
   </entry>
   
   <entry>
+    <title>Linux命令小记-SCP</title>
+    <link href="http://dyfeelme.github.io/2016/01/26/note-about-shell-scp/"/>
+    <id>http://dyfeelme.github.io/2016/01/26/note-about-shell-scp/</id>
+    <published>2016-01-26T11:24:28.000Z</published>
+    <updated>2016-04-27T01:37:09.452Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;SCP（Secure Copy）远程安全拷贝，是一个不需要通过FTP,WEB等额外服务就可以完成终端之间文件传输的命令行工具。&lt;/p&gt;
+&lt;h2 id=&quot;命令&quot;&gt;&lt;a href=&quot;#命令&quot; class=&quot;headerlink&quot; title=&quot;命令&quot;&gt;&lt;/a&gt;命令&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;获取远程服务器上的文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ scp -P 2222 username@ip:/path/filename &lt;span class=&quot;built_in&quot;&gt;local&lt;/span&gt;_filename&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;获取远程服务器上的目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ scp -P 2222 -r username@ip:/path/ &lt;span class=&quot;built_in&quot;&gt;local&lt;/span&gt;_dir&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;将本地文件传输至服务器指定目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ scp -P 2222 &lt;span class=&quot;built_in&quot;&gt;local&lt;/span&gt;_file username@ip:/path/filename&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;将本地目录传输至服务器指定目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ scp -P 2222 -r &lt;span class=&quot;built_in&quot;&gt;local&lt;/span&gt;_dir username@ip:/path/&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;参数&quot;&gt;&lt;a href=&quot;#参数&quot; class=&quot;headerlink&quot; title=&quot;参数&quot;&gt;&lt;/a&gt;参数&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;-v 用来显示进度，查看连接，认证，或是配置错误。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-C 使能压缩选项。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-4 强行使用 IPV4 地址。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;-6 强行使用 IPV6 地址。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;p&gt;SCP（Secure Copy）远程安全拷贝，是一个不需要通过FTP,WEB等额外服务就可以完成终端之间文件传输的命令行工具。&lt;/p&gt;
+&lt;h
+    
+    </summary>
+    
+      <category term="操作系统" scheme="http://dyfeelme.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="linux" scheme="http://dyfeelme.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/linux/"/>
+    
+    
+      <category term="note" scheme="http://dyfeelme.github.io/tags/note/"/>
+    
+      <category term="linux" scheme="http://dyfeelme.github.io/tags/linux/"/>
+    
+      <category term="shell" scheme="http://dyfeelme.github.io/tags/shell/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Docker 入门</title>
     <link href="http://dyfeelme.github.io/2016/01/13/howto-use-docker/"/>
     <id>http://dyfeelme.github.io/2016/01/13/howto-use-docker/</id>
     <published>2016-01-13T10:00:45.000Z</published>
-    <updated>2016-04-21T06:44:23.400Z</updated>
+    <updated>2016-04-27T01:30:33.513Z</updated>
     
     <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;我从14年年底开始关注docker容器生态的发展，短短两年见识了Docker的几近“燎原之势”，感慨互联网之迅猛之余，想着也该写篇文章来记录一下我的Docker成长之路。一切都将从那个炎热的中午开始…&lt;/p&gt;
 &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;目前docker的最新版本为1.10.3&lt;br&gt;linux（ubuntu）&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install curl&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ curl -fsSL https://get.docker.com/gpg | sudo apt-key add -&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ curl -fsSL https://get.docker.com | sh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -181,12 +269,8 @@
     
     </summary>
     
-      <category term="howto" scheme="http://dyfeelme.github.io/categories/howto/"/>
+      <category term="docker" scheme="http://dyfeelme.github.io/categories/docker/"/>
     
-      <category term="coding" scheme="http://dyfeelme.github.io/categories/howto/coding/"/>
-    
-    
-      <category term="howto" scheme="http://dyfeelme.github.io/tags/howto/"/>
     
       <category term="docker" scheme="http://dyfeelme.github.io/tags/docker/"/>
     
@@ -197,10 +281,10 @@
     <link href="http://dyfeelme.github.io/2015/12/11/howto-use-windows-chocolatey/"/>
     <id>http://dyfeelme.github.io/2015/12/11/howto-use-windows-chocolatey/</id>
     <published>2015-12-11T06:16:12.000Z</published>
-    <updated>2016-04-21T06:44:23.409Z</updated>
+    <updated>2016-04-27T01:33:34.568Z</updated>
     
     <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Chocolatey NuGet is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind.&lt;br&gt; 喜大普奔的记下这个良心之作-chocolatey。&lt;/p&gt;
+&lt;p&gt;Chocolatey NuGet is a Machine Package Manager, somewhat like apt-get, but built with Windows in mind.&lt;br&gt; 喜大普奔的记下这个良心之作&lt;a href=&quot;https://chocolatey.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;chocolatey&lt;/a&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;p&gt;打开CMD命令提示符，执行以下命令&lt;br&gt;&lt;figure class=&quot;highlight cmd&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;@powershell -NoProfile -ExecutionPolicy Bypass -Command &quot;iex ((new-object &lt;span class=&quot;built_in&quot;&gt;net&lt;/span&gt;.webclient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&quot; &amp;amp;&amp;amp; &lt;span class=&quot;built_in&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;PATH&lt;/span&gt;=&lt;span class=&quot;variable&quot;&gt;%PATH%&lt;/span&gt;;&lt;span class=&quot;variable&quot;&gt;%ALLUSERSPROFILE%&lt;/span&gt;\chocolatey\bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;或者打开PowerShell窗口，执行以下命令&lt;br&gt;&lt;figure class=&quot;highlight powershell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;iex ((&lt;span class=&quot;built_in&quot;&gt;new-object&lt;/span&gt; net.webclient).DownloadString(&lt;span class=&quot;string&quot;&gt;&#39;https://chocolatey.org/install.ps1&#39;&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -225,16 +309,14 @@
     
     </summary>
     
-      <category term="howto" scheme="http://dyfeelme.github.io/categories/howto/"/>
+      <category term="开发环境" scheme="http://dyfeelme.github.io/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
     
-      <category term="windows" scheme="http://dyfeelme.github.io/categories/howto/windows/"/>
+      <category term="windows" scheme="http://dyfeelme.github.io/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/windows/"/>
     
     
       <category term="windows" scheme="http://dyfeelme.github.io/tags/windows/"/>
     
       <category term="开发环境" scheme="http://dyfeelme.github.io/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
-    
-      <category term="dotfiles" scheme="http://dyfeelme.github.io/tags/dotfiles/"/>
     
       <category term="choco" scheme="http://dyfeelme.github.io/tags/choco/"/>
     
@@ -245,7 +327,7 @@
     <link href="http://dyfeelme.github.io/2015/07/13/stack-overflow-jvm-memory-leak/"/>
     <id>http://dyfeelme.github.io/2015/07/13/stack-overflow-jvm-memory-leak/</id>
     <published>2015-07-13T04:38:16.000Z</published>
-    <updated>2016-04-21T06:44:23.417Z</updated>
+    <updated>2016-04-27T01:38:56.085Z</updated>
     
     <content type="html">&lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;平时我们遇到最多的内存溢出的问题，我这里大略总结为以下三种&lt;/p&gt;
 &lt;ul&gt;
@@ -277,12 +359,88 @@
     
       <category term="stackoverflow" scheme="http://dyfeelme.github.io/categories/stackoverflow/"/>
     
-      <category term="jvm" scheme="http://dyfeelme.github.io/categories/stackoverflow/jvm/"/>
+      <category term="java" scheme="http://dyfeelme.github.io/categories/stackoverflow/java/"/>
     
+    
+      <category term="java" scheme="http://dyfeelme.github.io/tags/java/"/>
     
       <category term="jvm" scheme="http://dyfeelme.github.io/tags/jvm/"/>
     
       <category term="stackoverflow" scheme="http://dyfeelme.github.io/tags/stackoverflow/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开始Markdown写作</title>
+    <link href="http://dyfeelme.github.io/2015/04/26/quick-start-markdown/"/>
+    <id>http://dyfeelme.github.io/2015/04/26/quick-start-markdown/</id>
+    <published>2015-04-26T07:13:37.000Z</published>
+    <updated>2016-04-27T01:38:04.075Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;Markdown&lt;/a&gt;是一种简易的标记语言，目前依然成为众多程序员和其他写作爱好者的首选，它是一种能让作者专心于写作内容的轻量级语言。&lt;a href=&quot;https://zh.wikipedia.org/zh-cn/Markdown&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;更多&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h2&gt;&lt;h3 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot; title=&quot;标题&quot;&gt;&lt;/a&gt;标题&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 代表一级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;## 代表二级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;### 代表三级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;以此类推，共6级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;当然，我们也可以用另一种方式来标记一级和二级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;============= 可表示一级标题&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;------------- 表示二级标题&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot; title=&quot;列表&quot;&gt;&lt;/a&gt;列表&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;无序列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在列表前加入&amp;apos;+&amp;apos;、&amp;apos;-&amp;apos;或者&amp;apos;*&amp;apos;,后面跟 空格，如下：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 列表1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 列表2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- 列表3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;或者&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* 列表1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* 列表2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;* 列表3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;有序列表&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在列表前加 序号，后面跟 空格，如下：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 1. 列表1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 2. 列表2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; 3. 列表3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;图像&quot;&gt;&lt;a href=&quot;#图像&quot; class=&quot;headerlink&quot; title=&quot;图像&quot;&gt;&lt;/a&gt;图像&lt;/h3&gt;&lt;p&gt;有时候我们需要为文档引入图片，可使用如下语法：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;![Alt text](/path/to/img.jpg)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;![Alt text](/path/to/img.jpg &amp;quot;Optional title&amp;quot;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;以上参数依次为：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Alt text 代表图片的替代文字&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Optional title代表 可选的 &amp;apos;title&amp;apos; 文字。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;链接&quot;&gt;&lt;a href=&quot;#链接&quot; class=&quot;headerlink&quot; title=&quot;链接&quot;&gt;&lt;/a&gt;链接&lt;/h3&gt;&lt;p&gt;链接的语法跟图片相似，如下：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[链接文字](链接URL)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;引用&quot;&gt;&lt;a href=&quot;#引用&quot; class=&quot;headerlink&quot; title=&quot;引用&quot;&gt;&lt;/a&gt;引用&lt;/h3&gt;&lt;p&gt;引用的文字可以通过’&amp;gt;’来标记&lt;/p&gt;
+&lt;h3 id=&quot;段落&quot;&gt;&lt;a href=&quot;#段落&quot; class=&quot;headerlink&quot; title=&quot;段落&quot;&gt;&lt;/a&gt;段落&lt;/h3&gt;&lt;p&gt;段落可以通过 一个制表符 或 四个空格 来生成。&lt;/p&gt;
+&lt;h3 id=&quot;分割线&quot;&gt;&lt;a href=&quot;#分割线&quot; class=&quot;headerlink&quot; title=&quot;分割线&quot;&gt;&lt;/a&gt;分割线&lt;/h3&gt;&lt;p&gt;如果想要在一行生成分割线，我们可以通过三个以上’*’,”-“或者”_”来生成，中间可以加空格，所在行不能有其他文字，如下：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;* * *&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;- - -&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;_____&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://wowubuntu.com/markdown/#header&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Markdown语法&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://zh.wikipedia.org/zh-cn/Markdown&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;维基百科-Markdown&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;&quot;&gt;Markdown&lt;/a&gt;是一种简易的标记语言，目前依然成为众多程序员和其他写作爱好者的首选，它是一种能让作者专心于写作
+    
+    </summary>
+    
+      <category term="blog" scheme="http://dyfeelme.github.io/categories/blog/"/>
+    
+    
+      <category term="quickstart" scheme="http://dyfeelme.github.io/tags/quickstart/"/>
+    
+      <category term="markdown" scheme="http://dyfeelme.github.io/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于升级maven构建webapp版本的问题</title>
+    <link href="http://dyfeelme.github.io/2015/04/26/stack-overflow-maven-plugin-web-version/"/>
+    <id>http://dyfeelme.github.io/2015/04/26/stack-overflow-maven-plugin-web-version/</id>
+    <published>2015-04-26T02:32:30.000Z</published>
+    <updated>2016-04-27T01:39:17.797Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;工作中如果我们通过maven来管理项目，由于maven的一些插件更新比较慢，比如本文所述maven-archetype-webapp,目前版本为1.0或1.1，如果我们构建器插件来新建一个webapp项目的时候，那么默认配置将会是基于jdk1.5和web2.3的项目，so 问题来了!我们要怎样将此项目变更为基于jdk1.7或web 3.0的项目呢?&lt;/p&gt;
+&lt;h2 id=&quot;解决方案&quot;&gt;&lt;a href=&quot;#解决方案&quot; class=&quot;headerlink&quot; title=&quot;解决方案&quot;&gt;&lt;/a&gt;解决方案&lt;/h2&gt;&lt;p&gt;当然你可以使用新建动态项目之流的方式，当本文所述依然为maven插件形式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;你可以升级上述maven-archetype-webapp插件，发布到工作组的私服中。&lt;/li&gt;
+&lt;li&gt;切换至项目所在目录，编辑.setting目录下的org.eclipse.wst.common.project.facet.core.xml文件，如下：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;faceted-project&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;fixed facet=&amp;quot;wst.jsdt.web&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;installed facet=&amp;quot;jst.web&amp;quot; version=&amp;quot;3.0&amp;quot;/&amp;gt;&amp;lt;!-- 此处配置web.xml的版本--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;installed facet=&amp;quot;wst.jsdt.web&amp;quot; version=&amp;quot;1.0&amp;quot;/&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &amp;lt;installed facet=&amp;quot;java&amp;quot; version=&amp;quot;1.8&amp;quot;/&amp;gt;&amp;lt;!-- 此处配置jdk的版本--&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/faceted-project&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;当然别忘记更新项目中web.xml中的描述文件，如下可选：&lt;/p&gt;
+&lt;p&gt;web.xml 2.5&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;web-app xmlns=&amp;quot;http://java.sun.com/xml/ns/javaee&amp;quot;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xsi:schemaLocation=&amp;quot;http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd&amp;quot;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    version=&amp;quot;2.5&amp;quot;&amp;gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/web-app&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;web.xml 3.0&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;web-app  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    version=&amp;quot;3.0&amp;quot;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xmlns=&amp;quot;http://java.sun.com/xml/ns/javaee&amp;quot;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xsi:schemaLocation=&amp;quot;http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd&amp;quot;&amp;gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;       &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/web-app&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;配合maven-plugin-compile插件，设置编译版本为jdk1.7,如下：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;plugin&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;artifactId&amp;gt;maven-compiler-plugin&amp;lt;/artifactId&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;configuration&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &amp;lt;!-- or whatever version you use --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &amp;lt;source&amp;gt;$&amp;#123;java.version&amp;#125;&amp;lt;/source&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &amp;lt;target&amp;gt;$&amp;#123;java.version&amp;#125;&amp;lt;/target&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;lt;/configuration&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;/plugin&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h2&gt;&lt;p&gt;工作中如果我们通过maven来管理项目，由于maven的一些插件更新比较慢，比如本文所述maven-archetype-webapp,目前版
+    
+    </summary>
+    
+      <category term="stackoverflow" scheme="http://dyfeelme.github.io/categories/stackoverflow/"/>
+    
+      <category term="java" scheme="http://dyfeelme.github.io/categories/stackoverflow/java/"/>
+    
+    
+      <category term="java" scheme="http://dyfeelme.github.io/tags/java/"/>
+    
+      <category term="stackoverflow" scheme="http://dyfeelme.github.io/tags/stackoverflow/"/>
+    
+      <category term="maven" scheme="http://dyfeelme.github.io/tags/maven/"/>
     
   </entry>
   
@@ -320,11 +478,147 @@
   </entry>
   
   <entry>
+    <title>使用WebHarvest攫取页面数据</title>
+    <link href="http://dyfeelme.github.io/2015/02/26/quick-start-webharvest/"/>
+    <id>http://dyfeelme.github.io/2015/02/26/quick-start-webharvest/</id>
+    <published>2015-02-26T06:34:34.000Z</published>
+    <updated>2016-04-27T01:38:28.145Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://web-harvest.sourceforge.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;WebHarvest&lt;/a&gt;是一款Java实现的页面数据提取工具，可以通过xpath,xquery等xml技术，精准高效灵活的对所关心的数据进行提取。&lt;/p&gt;
+&lt;h2 id=&quot;快速起步&quot;&gt;&lt;a href=&quot;#快速起步&quot; class=&quot;headerlink&quot; title=&quot;快速起步&quot;&gt;&lt;/a&gt;快速起步&lt;/h2&gt;&lt;p&gt;接下来，我们将通过获取一个网站页面来进行。&lt;/p&gt;
+&lt;h3 id=&quot;入口&quot;&gt;&lt;a href=&quot;#入口&quot; class=&quot;headerlink&quot; title=&quot;入口&quot;&gt;&lt;/a&gt;入口&lt;/h3&gt;&lt;p&gt;首先我们应该先实例化一个“小爬虫”，如下&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;String configFile = &lt;span class=&quot;string&quot;&gt;&quot;xxx&quot;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//此处是爬虫爬取数据的规则文件，需用户编写。如：&quot;scraper-taobao.xml&quot;,可使用相对路径或绝对路径。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;String scraperPath = &lt;span class=&quot;string&quot;&gt;&quot;xxx&quot;&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//此处配置爬取的根目录，如需生成本地数据文件，请指定系统绝对路径。如：D:/scraper,请注意路径分隔符。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ScraperConfiguration config = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ScraperConfiguration(configFile);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Scraper scraper = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Scraper(config, scraperPath);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;scraper.addVariableToContext(&lt;span class=&quot;string&quot;&gt;&quot;param1&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;value1&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;scraper.addVariableToContext(&lt;span class=&quot;string&quot;&gt;&quot;param2&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;value2&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;如上，可将参数param1和param2传入scraper会话当中，从而在规则文件中动态获取参数。&lt;/p&gt;
+&lt;h3 id=&quot;启动&quot;&gt;&lt;a href=&quot;#启动&quot; class=&quot;headerlink&quot; title=&quot;启动&quot;&gt;&lt;/a&gt;启动&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;scraper.execute();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;爬虫爬取过程将会阻塞线程，所以性能不是很好。&lt;/p&gt;
+&lt;h3 id=&quot;处理数据&quot;&gt;&lt;a href=&quot;#处理数据&quot; class=&quot;headerlink&quot; title=&quot;处理数据&quot;&gt;&lt;/a&gt;处理数据&lt;/h3&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Variable articles = (Variable) scraper.getContext().get(&lt;span class=&quot;string&quot;&gt;&quot;articles&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;爬虫完毕后，会将爬到的数据保存到会话上下文中，我们可以通过获取规则文件中指定的参数，并转换为后台程序需要的数据，默认支持List，String，Integer等类型。&lt;/p&gt;
+&lt;h3 id=&quot;编写规则文件&quot;&gt;&lt;a href=&quot;#编写规则文件&quot; class=&quot;headerlink&quot; title=&quot;编写规则文件&quot;&gt;&lt;/a&gt;编写规则文件&lt;/h3&gt;&lt;p&gt;WebHarvest的规则文件是其核心，也是我们青睐它的原因之一，但目前编写该规则文件对程序员的门槛依然相对较高，虽然作者提供了IDE来简化编写难度，如下：&lt;br&gt;&lt;img src=&quot;../images/webharvest-ide.jpg&quot; alt=&quot;WebHarvest IDE&quot;&gt;&lt;/p&gt;
+&lt;p&gt;诚然，熟悉了语法之后，我们就可以通过徒手编写规则来完成了，以下是需要了解的关键技术：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;xpath 一门可以在XML文档快速定位和查找结点的语言。&lt;/li&gt;
+&lt;li&gt;regex 业界通用的强大到无敌的正则表达式。&lt;/li&gt;
+&lt;li&gt;xquery 可以将XML作为SQL容器的语言。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更对用法请参考&lt;a href=&quot;http://web-harvest.sourceforge.net/manual.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://web-harvest.sourceforge.net/&quot; target=&quot;_blank&quot; rel=&quot;ext
+    
+    </summary>
+    
+      <category term="爬虫技术" scheme="http://dyfeelme.github.io/categories/%E7%88%AC%E8%99%AB%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="java" scheme="http://dyfeelme.github.io/tags/java/"/>
+    
+      <category term="爬虫" scheme="http://dyfeelme.github.io/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于Spring整合Quartz的问题</title>
+    <link href="http://dyfeelme.github.io/2014/08/26/stack-overflow-spring-with-quartz/"/>
+    <id>http://dyfeelme.github.io/2014/08/26/stack-overflow-spring-with-quartz/</id>
+    <published>2014-08-26T12:03:56.000Z</published>
+    <updated>2016-04-27T01:39:37.073Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;Caused by: Java.lang.IncompatibleClassChangeError: class org.springframework.scheduling.quartz.CronTriggerBean has interface org.quartz.CronTrigger as super class&lt;/p&gt;
+&lt;h2 id=&quot;解决方法&quot;&gt;&lt;a href=&quot;#解决方法&quot; class=&quot;headerlink&quot; title=&quot;解决方法&quot;&gt;&lt;/a&gt;解决方法&lt;/h2&gt;&lt;p&gt;如上问题，一般是由于spring 3.x 和 quartz 2.X版本不兼容导致，具体原因是org.quartz.CronTrigger在2.0以后从class变成了一个接口导致，坑啊，所以说前期设计架构一定要搞好啊。&lt;br&gt;trigger 用 org.springframework.scheduling.quartz.CronTriggerFactoryBean&lt;br&gt;&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- 基于Cron表达式的打火器 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bean&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;cronTrigger&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;org.springframework.scheduling.quartz.CronTriggerFactoryBean&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;property&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;jobDetail&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;ref&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;jobDetail&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;&amp;lt;!-- 每分钟执行一次 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;property&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;cronExpression&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;*/30 * * * * ?&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bean&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;上述问题还有可能存在于Tomcat版本不兼容的问题上，比如tomcat-7.0.16中发现会有上述的问题。&lt;/p&gt;
+&lt;h2 id=&quot;问题描述-1&quot;&gt;&lt;a href=&quot;#问题描述-1&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;Caused by: java.io.IOException: JobDataMap values must be Strings when the ‘useProperties’ property is set.  Key of offending value: methodInvoker&lt;/p&gt;
+&lt;h2 id=&quot;解决方法-1&quot;&gt;&lt;a href=&quot;#解决方法-1&quot; class=&quot;headerlink&quot; title=&quot;解决方法&quot;&gt;&lt;/a&gt;解决方法&lt;/h2&gt;&lt;p&gt;如下：&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&quot;问题描述-2&quot;&gt;&lt;a href=&quot;#问题描述-2&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;不能通过依赖注入的方式直接获取bean实例&lt;/p&gt;
+&lt;h2 id=&quot;解决方法-2&quot;&gt;&lt;a href=&quot;#解决方法-2&quot; class=&quot;headerlink&quot; title=&quot;解决方法&quot;&gt;&lt;/a&gt;解决方法&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;在Job中通过预先注入好的实例，ApplicationContext.getBean(“xxx”)获取。&lt;/li&gt;
+&lt;li&gt;重写 JobBeanFactory,通过配置SchedulerFactoryBean来指定自定义的FactoryBean,如下：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bean&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;org.springframework.scheduling.quartz.SchedulerFactoryBean&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	...此处省略&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;property&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;jobFactory&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;bean&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;com.xxx.AutowiredSpringBeanJobFactory&quot;&lt;/span&gt; /&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;property&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;bean&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; org.quartz.spi.TriggerFiredBundle;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; org.springframework.beans.BeansException;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; org.springframework.beans.factory.config.AutowireCapableBeanFactory;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; org.springframework.context.ApplicationContext;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; org.springframework.context.ApplicationContextAware;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; org.springframework.scheduling.quartz.SpringBeanJobFactory;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;AutowiredSpringBeanJobFactory&lt;/span&gt;  &lt;span class=&quot;keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;SpringBeanJobFactory&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;implements&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;ApplicationContextAware&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; AutowireCapableBeanFactory factory;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;setApplicationContext&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(ApplicationContext context)&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;throws&lt;/span&gt; BeansException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		factory = context.getAutowireCapableBeanFactory();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;meta&quot;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;protected&lt;/span&gt; Object &lt;span class=&quot;title&quot;&gt;createJobInstance&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(TriggerFiredBundle bundle)&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;throws&lt;/span&gt; Exception &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		 &lt;span class=&quot;keyword&quot;&gt;final&lt;/span&gt; Object instance = &lt;span class=&quot;keyword&quot;&gt;super&lt;/span&gt;.createJobInstance(bundle);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	     factory.autowireBean(instance);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	     &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; instance;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;Caused by: Java.lang.IncompatibleClassChangeError: class org.s
+    
+    </summary>
+    
+      <category term="stackoverflow" scheme="http://dyfeelme.github.io/categories/stackoverflow/"/>
+    
+      <category term="java" scheme="http://dyfeelme.github.io/categories/stackoverflow/java/"/>
+    
+    
+      <category term="java" scheme="http://dyfeelme.github.io/tags/java/"/>
+    
+      <category term="stackoverflow" scheme="http://dyfeelme.github.io/tags/stackoverflow/"/>
+    
+      <category term="spring" scheme="http://dyfeelme.github.io/tags/spring/"/>
+    
+      <category term="quartz" scheme="http://dyfeelme.github.io/tags/quartz/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mysql数据库笔记</title>
+    <link href="http://dyfeelme.github.io/2014/08/26/howto-use-mysql/"/>
+    <id>http://dyfeelme.github.io/2014/08/26/howto-use-mysql/</id>
+    <published>2014-08-26T11:53:48.000Z</published>
+    <updated>2016-04-27T01:33:06.558Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;ubuntu&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install mysql-server-5.6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;centos&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ sudo yum install mariadb-server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;配置&quot;&gt;&lt;a href=&quot;#配置&quot; class=&quot;headerlink&quot; title=&quot;配置&quot;&gt;&lt;/a&gt;配置&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ /etc/mysql/my.ini&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;为了能进行远程登录，注释掉bing-address=127.0.0.1一行&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;操作&quot;&gt;&lt;a href=&quot;#操作&quot; class=&quot;headerlink&quot; title=&quot;操作&quot;&gt;&lt;/a&gt;操作&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;登录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ mysql -u root -h localhost -p&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;建库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ create database db_name default character &lt;span class=&quot;built_in&quot;&gt;set&lt;/span&gt; utf8;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;授权&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ grant all privileges on db_name.* to user@&lt;span class=&quot;string&quot;&gt;&#39;%&#39;&lt;/span&gt; identified by &lt;span class=&quot;string&quot;&gt;&#39;password&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;上述命令授权的同时新建了用户，如要授权已有用户，则不需要指定 identified by &lt;span class=&quot;string&quot;&gt;&#39;password&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;其中%代表所有IP，即可以进行远程登陆。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ flush privilges;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;建表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ create table t_tablename (&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    ID BIGINT NOT NULL,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    NAME  VARCHAR(200) NOT NULL,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    DESCRIPTION VARCHAR(250) NULL,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    DATA BLOB NULL,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    PRIMARY KEY (ID));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;删除表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ drop table &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; exists t_tablename;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;删除数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ drop database &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; exists db_name;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;导入脚本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ mysql -u user -h localhost -p password -D db_name &amp;lt; /path/script.sql&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;或者&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mysql&amp;gt; &lt;span class=&quot;built_in&quot;&gt;source&lt;/span&gt; /path/script.sql&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;或者&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mysql&amp;gt; \. /path/script.sql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot; title=&quot;概述&quot;&gt;&lt;/a&gt;概述&lt;/h2&gt;&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;figur
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://dyfeelme.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="数据库" scheme="http://dyfeelme.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="mysql" scheme="http://dyfeelme.github.io/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用Eclipse对应用进行远端调试</title>
     <link href="http://dyfeelme.github.io/2014/08/13/howto-use-eclipse-remote-debugger/"/>
     <id>http://dyfeelme.github.io/2014/08/13/howto-use-eclipse-remote-debugger/</id>
     <published>2014-08-13T06:58:20.000Z</published>
-    <updated>2016-04-21T06:44:23.402Z</updated>
+    <updated>2016-04-27T01:30:57.825Z</updated>
     
     <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;JPDA（Java Platform Debugger Architecture）是 Java 平台调试体系结构的缩写，通过 JPDA 提供的 API，开发人员可以方便灵活的搭建 Java 调试应用程序。 JPDA 主要由三个部分组成：Java 虚拟机工具接口（JVMTI），Java 调试线协议（JDWP），以及 Java 调试接口（JDI）– 引至：IBM DeveloperWorks&lt;/p&gt;
@@ -348,9 +642,9 @@
     
     </summary>
     
-      <category term="howto" scheme="http://dyfeelme.github.io/categories/howto/"/>
+      <category term="java" scheme="http://dyfeelme.github.io/categories/java/"/>
     
-      <category term="coding" scheme="http://dyfeelme.github.io/categories/howto/coding/"/>
+      <category term="ide" scheme="http://dyfeelme.github.io/categories/java/ide/"/>
     
     
       <category term="eclipse" scheme="http://dyfeelme.github.io/tags/eclipse/"/>
@@ -358,8 +652,6 @@
       <category term="debug" scheme="http://dyfeelme.github.io/tags/debug/"/>
     
       <category term="jpda" scheme="http://dyfeelme.github.io/tags/jpda/"/>
-    
-      <category term="maven" scheme="http://dyfeelme.github.io/tags/maven/"/>
     
   </entry>
   
@@ -411,7 +703,7 @@
     <link href="http://dyfeelme.github.io/2014/04/14/howto-use-eclipse/"/>
     <id>http://dyfeelme.github.io/2014/04/14/howto-use-eclipse/</id>
     <published>2014-04-14T11:00:21.000Z</published>
-    <updated>2016-04-21T06:44:23.403Z</updated>
+    <updated>2016-04-27T01:31:24.576Z</updated>
     
     <content type="html">&lt;h2 id=&quot;快捷键&quot;&gt;&lt;a href=&quot;#快捷键&quot; class=&quot;headerlink&quot; title=&quot;快捷键&quot;&gt;&lt;/a&gt;快捷键&lt;/h2&gt;&lt;h3 id=&quot;比较重要的快捷键&quot;&gt;&lt;a href=&quot;#比较重要的快捷键&quot; class=&quot;headerlink&quot; title=&quot;比较重要的快捷键&quot;&gt;&lt;/a&gt;比较重要的快捷键&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;代码助手:Ctrl+Space（简体中文操作系统是Alt+/）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;快速修正：Ctrl+1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;单词补全：Alt+/&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;打开外部Java文档：Shift+F2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;显示搜索对话框：Ctrl+H&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;快速Outline：Ctrl+O&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;打开资源：Ctrl+Shift+R&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;打开类型：Ctrl+Shift+T&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;显示重构菜单：Alt+Shift+T&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;上一个/下一个光标的位置：Alt+Left/Right &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;上一个/下一个成员（成员对象或成员函数）：Ctrl+Shift+Up/Down&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中闭合元素：Alt+Shift+Up/Down/Left/Right&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;删除行：Ctrl+D&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在当前行上插入一行：Ctrl+Shift+Enter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在当前行下插入一行： Shift+Enter&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;上下移动选中的行：Alt+Up/Down&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;组织导入：Ctrl+Shift+O&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;### 定位 ### &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;```code&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2.1行内定位 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;行末/行首：End/Home&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;前一个/后一个单词：Ctrl+Right/Left&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2.2文件内定位 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;跳到某行：Ctrl+L&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;上下滚屏：Ctrl+Up/Down&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;上一个/下一个成员（成员对象或成员函数）：Ctrl+Shift+Up/Down&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;快速Outline：Ctrl+O &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2.3跨文件定位 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;打开声明：F3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;打开资源：Ctrl+Shift+R&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;打开类型：Ctrl+Shift+T&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在workspace中搜索选中元素的声明：Ctrl+G&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在workspace中搜索选中的文本：Ctrl+Alt+G&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;在workspace中搜索选中元素的引用：Ctrl+Shift+G&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;打开调用层次结构：Ctrl+Alt+H&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;快速层次结构：Ctrl+T&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;反悔：Ctrl+Z&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2.4其它 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;上一个/下一个光标所在位置：Alt+Left/Right&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;上一个编辑的位置：Ctrl+Q&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h3 id=&quot;选中快捷键&quot;&gt;&lt;a href=&quot;#选中快捷键&quot; class=&quot;headerlink&quot; title=&quot;选中快捷键&quot;&gt;&lt;/a&gt;选中快捷键&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;3.1行内选中 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中到行末/行首：Shift+End/Home&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中上一个/下一个单词：Ctrl+Shift+Left/Right&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3.2文件内选中 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中闭合元素：Alt+Shift+Up&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;恢复到上一个选中：Alt+Shift+Down&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;选中下一个/上一个元素：Alt+Shift+Right/Left&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -451,18 +743,16 @@
     
     </summary>
     
-      <category term="howto" scheme="http://dyfeelme.github.io/categories/howto/"/>
+      <category term="java" scheme="http://dyfeelme.github.io/categories/java/"/>
     
-      <category term="coding" scheme="http://dyfeelme.github.io/categories/howto/coding/"/>
+      <category term="ide" scheme="http://dyfeelme.github.io/categories/java/ide/"/>
     
-    
-      <category term="eclipse" scheme="http://dyfeelme.github.io/tags/eclipse/"/>
     
       <category term="java" scheme="http://dyfeelme.github.io/tags/java/"/>
     
-      <category term="howto" scheme="http://dyfeelme.github.io/tags/howto/"/>
-    
       <category term="ide" scheme="http://dyfeelme.github.io/tags/ide/"/>
+    
+      <category term="eclipse" scheme="http://dyfeelme.github.io/tags/eclipse/"/>
     
   </entry>
   
@@ -471,7 +761,7 @@
     <link href="http://dyfeelme.github.io/2012/03/13/a-piece-of-code-char2num/"/>
     <id>http://dyfeelme.github.io/2012/03/13/a-piece-of-code-char2num/</id>
     <published>2012-03-13T07:39:54.000Z</published>
-    <updated>2016-04-21T06:44:23.394Z</updated>
+    <updated>2016-04-27T01:30:05.121Z</updated>
     
     <content type="html">&lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;本工具类可以匹配字符串中字母，并将其转换为数字，反之可行，适用于小范围查找替换。&lt;/p&gt;
 &lt;h2 id=&quot;大写字母转数字工具类&quot;&gt;&lt;a href=&quot;#大写字母转数字工具类&quot; class=&quot;headerlink&quot; title=&quot;大写字母转数字工具类&quot;&gt;&lt;/a&gt;大写字母转数字工具类&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;public static String char2num(String code)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	Pattern pat = Pattern.compile(REG_ALL_LETTERS);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	Matcher mat = pat.matcher(code);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	//遍历所有匹配项&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	StringBuffer sb = new StringBuffer();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	while(mat.find())&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		mat.appendReplacement(sb,c2i(mat.group()));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	mat.appendTail(sb);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return sb.toString();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;private static String c2i()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	int i = c.charAt(0) - NUM_C2I;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return Integer.toString(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -484,14 +774,14 @@
     
     </summary>
     
-      <category term="coding" scheme="http://dyfeelme.github.io/categories/coding/"/>
+      <category term="java" scheme="http://dyfeelme.github.io/categories/java/"/>
     
-      <category term="java" scheme="http://dyfeelme.github.io/categories/coding/java/"/>
+      <category term="utils" scheme="http://dyfeelme.github.io/categories/java/utils/"/>
     
     
       <category term="java" scheme="http://dyfeelme.github.io/tags/java/"/>
     
-      <category term="util" scheme="http://dyfeelme.github.io/tags/util/"/>
+      <category term="utils" scheme="http://dyfeelme.github.io/tags/utils/"/>
     
   </entry>
   
