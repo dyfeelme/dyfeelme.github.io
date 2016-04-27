@@ -93,8 +93,28 @@
 </header>
     <div class="article-content">
         
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Git</p>
-<h2 id="分布式版本控制体系"><a href="#分布式版本控制体系" class="headerlink" title="分布式版本控制体系"></a>分布式版本控制体系</h2><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h2 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h2><h2 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h2><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2>
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>Git是目前最为流行的分布式版本控制工具之一，有别于VCS、SVN等集中式版本控制系统，Git不需要单独提供集中管控的服务器，因此不存在单点故障或导致服务器数据丢失的致命缺陷。</p>
+<h2 id="分布式版本控制体系"><a href="#分布式版本控制体系" class="headerlink" title="分布式版本控制体系"></a>分布式版本控制体系</h2><p>分布式版本控制体系，英文全称Distributed Version Control System，简称 DVCS。<br>特点：</p>
+<ul>
+<li>记录快照而非差异</li>
+<li></li>
+</ul>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">usage: git [--version] [--help] [-C &lt;path&gt;] [-c name=value]</span><br><span class="line">           [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]</span><br><span class="line">           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]</span><br><span class="line">           [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]</span><br><span class="line">           &lt;<span class="built_in">command</span>&gt; [&lt;args&gt;]</span><br><span class="line"></span><br><span class="line">These are common Git commands used <span class="keyword">in</span> various situations:</span><br><span class="line"></span><br><span class="line">start a working area (see also: git <span class="built_in">help</span> tutorial)</span><br><span class="line">   <span class="built_in">clone</span>      Clone a repository into a new directory</span><br><span class="line">   init       Create an empty Git repository or reinitialize an existing one</span><br><span class="line"></span><br><span class="line">work on the current change (see also: git <span class="built_in">help</span> everyday)</span><br><span class="line">   add        Add file contents to the index</span><br><span class="line">   mv         Move or rename a file, a directory, or a symlink</span><br><span class="line">   reset      Reset current HEAD to the specified state</span><br><span class="line">   rm         Remove files from the working tree and from the index</span><br><span class="line"></span><br><span class="line">examine the <span class="built_in">history</span> and state (see also: git <span class="built_in">help</span> revisions)</span><br><span class="line">   bisect     Use binary search to find the commit that introduced a bug</span><br><span class="line">   grep       Print lines matching a pattern</span><br><span class="line">   <span class="built_in">log</span>        Show commit logs</span><br><span class="line">   show       Show various types of objects</span><br><span class="line">   status     Show the working tree status</span><br><span class="line"></span><br><span class="line">grow, mark and tweak your common <span class="built_in">history</span></span><br><span class="line">   branch     List, create, or delete branches</span><br><span class="line">   checkout   Switch branches or restore working tree files</span><br><span class="line">   commit     Record changes to the repository</span><br><span class="line">   diff       Show changes between commits, commit and working tree, etc</span><br><span class="line">   merge      Join two or more development histories together</span><br><span class="line">   rebase     Reapply commits on top of another base tip</span><br><span class="line">   tag        Create, list, delete or verify a tag object signed with GPG</span><br><span class="line"></span><br><span class="line">collaborate (see also: git <span class="built_in">help</span> workflows)</span><br><span class="line">   fetch      Download objects and refs from another repository</span><br><span class="line">   pull       Fetch from and integrate with another repository or a <span class="built_in">local</span> branch</span><br><span class="line">   push       Update remote refs along with associated objects</span><br><span class="line"></span><br><span class="line"><span class="string">'git help -a'</span> and <span class="string">'git help -g'</span> list available subcommands and some</span><br><span class="line">concept guides. See <span class="string">'git help &lt;command&gt;'</span> or <span class="string">'git help &lt;concept&gt;'</span></span><br><span class="line">to <span class="built_in">read</span> about a specific subcommand or concept.</span><br></pre></td></tr></table></figure>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git config --list</span><br><span class="line">初次使用推荐配置</span><br><span class="line">$ git config --global user.name <span class="string">"xxx"</span></span><br><span class="line">$ git config --global user.email xxx@xxx.com</span><br><span class="line">配置默认文本编辑器</span><br><span class="line">$ git config --global core.editor emacs [可选vim, vi等]</span><br><span class="line">配置默认差异比较工具</span><br><span class="line">$ git config --global merge.tool vimdiff [可选kdiff3，tkdiff，meld，xxdiff，emerge，vimdiff，gvimdiff，ecmerge，和 opendiff 等]</span><br><span class="line">更多参考</span><br><span class="line">$ git <span class="built_in">help</span> config</span><br></pre></td></tr></table></figure>
+<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">初始化，将当前项目纳入版本控制</span><br><span class="line">$ git init</span><br><span class="line">添加文件到版本控制</span><br><span class="line">$ git add *.js</span><br><span class="line">$ git add README</span><br><span class="line">$ git add --all</span><br><span class="line">查看当前版本状态</span><br><span class="line">$ git status</span><br><span class="line">提交变更</span><br><span class="line">$ git commit -m <span class="string">"comment"</span></span><br></pre></td></tr></table></figure>
+<h2 id="克隆"><a href="#克隆" class="headerlink" title="克隆"></a>克隆</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">克隆仓库项目至本地,默认新建repo目录</span><br><span class="line">$ git <span class="built_in">clone</span> git://git.repo.com/repo.git</span><br><span class="line">克隆仓库至本地指定目录</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/dyfeelme/dyfeelme.github.io blog</span><br></pre></td></tr></table></figure>
+<h2 id="gitignore"><a href="#gitignore" class="headerlink" title="gitignore"></a>gitignore</h2><p>如果想要让git忽略某些不关心或者不适合提交到版本控制的文件或目录，则需要通过配置.gitignore文件来指定。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">用户级别的gitignore,一般存放在用户目录下，当然也可以在.gitconfig中指定其他位置。项目自定义的则存放于项目根目录（与.git目录同级），如下：</span><br><span class="line">$ cat ~/.gitignore</span><br><span class="line">*.swp</span><br><span class="line">build</span><br><span class="line">.DS_store</span><br><span class="line">如上为用户级别的gitignore,指定了所有以.swp为后缀的文件，build目录和.DS_store目录。</span><br><span class="line">$ cat project/.gitignore</span><br><span class="line">.settings</span><br><span class="line">build</span><br><span class="line">*.iso</span><br><span class="line">如上为项目级别的gitignore,其中指定了.settings目录,build目录和所有以.iso为后缀的镜像文件。</span><br></pre></td></tr></table></figure></p>
+<p>规则如下：</p>
+<blockquote>
+<p>所有空行或者以注释符号 ＃ 开头的行都会被 Git 忽略。<br>可以使用标准的 glob 模式匹配。 <em> 匹配模式最后跟反斜杠（/）说明要忽略的是目录。 </em> 要忽略指定模式以外的文件或目录，可以在模式前加上惊叹号（!）取反。<br>所谓的 glob 模式是指 shell 所使用的简化了的正则表达式。星号（*）匹配零个或多个任意字符；[abc] 匹配任何一个列在方括号中的字符（这个例子要么匹配一个 a，要么匹配一个 b，要么匹配一个 c）；问号（?）只匹配一个任意字符；如果在方括号中使用短划线分隔两个字符，表示所有在这两个字符范围内的都可以匹配（比如[0-9] 表示匹配所有 0 到 9 的数字）。</p>
+</blockquote>
+<h2 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git diff 比较当前文件和暂存区域快照的差异</span><br><span class="line">$ git diff --cache 或 --staged 比较暂存区域和上次提交版本快照的差异</span><br></pre></td></tr></table></figure>
+<h2 id="移除-amp-重命名"><a href="#移除-amp-重命名" class="headerlink" title="移除&amp;重命名"></a>移除&amp;重命名</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">移除</span><br><span class="line">$ git rm file 将文件从已跟踪文件清单中移除，区别于直接rm命令删除</span><br><span class="line">重命名</span><br><span class="line">$ git mv file newfile 重名名文件，虽然git不像svn等会记录文件改名操作，但git通过以下命令组合完成了改名操作</span><br><span class="line">$ mv file newfile &amp;&amp; git rm file &amp;&amp; git add newfile</span><br></pre></td></tr></table></figure>
+<h2 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">log</span> 查看提交日志</span><br><span class="line">可选参数</span><br><span class="line">-p 按补丁格式显示每个更新之间的差异。</span><br><span class="line">--stat 显示每次更新的文件修改统计信息。</span><br><span class="line">--shortstat 只显示 --stat 中最后的行数修改添加移除统计。</span><br><span class="line">--name-only 仅在提交信息后显示已修改的文件清单。</span><br><span class="line">--name-status 显示新增、修改、删除的文件清单。</span><br><span class="line">--abbrev-commit 仅显示 SHA-1 的前几个字符，而非所有的 40 个字符。</span><br><span class="line">--relative-date 使用较短的相对时间显示（比如，“2 weeks ago”）。</span><br><span class="line">--graph 显示 ASCII 图形表示的分支合并历史。</span><br><span class="line">--pretty 使用其他格式显示历史提交信息。可用的选项包括 oneline，short，full，fuller 和 format（后跟指定格式）。</span><br></pre></td></tr></table></figure>
+<h2 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git reset</span><br></pre></td></tr></table></figure>
+<h2 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ git remote 列出每个远程库的简短名字</span><br><span class="line">origin</span><br><span class="line">-v 选项（译注：此为 --verbose 的简写，取首字母），显示对应的克隆地址</span><br><span class="line">$ git remote -v</span><br><span class="line">origin	https://github.com/dyfeelme/dyfeelme.github.io</span><br></pre></td></tr></table></figure>
+<h2 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h2><h2 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h2><h2 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h2><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://www.open-open.com/lib/view/open1328069733264.html#articleHeader16" target="_blank" rel="external">Git命令</a></p>
+
         
         
         <p class="article-more-link">
@@ -372,7 +392,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/windows/">windows</a><a href="/tags/开发环境/">开发环境</a><a href="/tags/cmd/">cmd</a>
+  <span></span> <a href="/tags/开发环境/">开发环境</a><a href="/tags/windows/">windows</a><a href="/tags/cmd/">cmd</a>
   </div>
 
 </div>
@@ -679,7 +699,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/windows/">windows</a><a href="/tags/开发环境/">开发环境</a><a href="/tags/choco/">choco</a>
+  <span></span> <a href="/tags/开发环境/">开发环境</a><a href="/tags/windows/">windows</a><a href="/tags/choco/">choco</a>
   </div>
 
 </div>
@@ -759,7 +779,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/java/">java</a><a href="/tags/jvm/">jvm</a><a href="/tags/stackoverflow/">stackoverflow</a>
+  <span></span> <a href="/tags/java/">java</a><a href="/tags/stackoverflow/">stackoverflow</a><a href="/tags/jvm/">jvm</a>
   </div>
 
 </div>
@@ -844,13 +864,13 @@
 		  
 		
 		  
-			<li><a href="/categories/java/" title="java">java<sup>4</sup></a></li>
-		  
-		
-		  
 			<li><a href="/categories/stackoverflow/java/" title="java">java<sup>3</sup></a></li>
 		  
 		
+		  
+		
+		  
+			<li><a href="/categories/java/" title="java">java<sup>4</sup></a></li>
 		  
 		
 		  
@@ -933,7 +953,7 @@
 			
 		
 			
-				<li><a href="/tags/jvm/" title="jvm">jvm<sup>2</sup></a></li>
+				<li><a href="/tags/eclipse/" title="eclipse">eclipse<sup>2</sup></a></li>
 			
 		
 			
@@ -945,39 +965,11 @@
 			
 		
 			
-				<li><a href="/tags/eclipse/" title="eclipse">eclipse<sup>2</sup></a></li>
+				<li><a href="/tags/jvm/" title="jvm">jvm<sup>2</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/utils/" title="utils">utils<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/shell/" title="shell">shell<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/linux/" title="linux">linux<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/note/" title="note">note<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/quartz/" title="quartz">quartz<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/quickstart/" title="quickstart">quickstart<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/cmd/" title="cmd">cmd<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/mysql/" title="mysql">mysql<sup>1</sup></a></li>
+				<li><a href="/tags/版本控制/" title="版本控制">版本控制<sup>1</sup></a></li>
 			
 		
 			
@@ -985,7 +977,35 @@
 			
 		
 			
+				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/github/" title="github">github<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/blog/" title="blog">blog<sup>1</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/数据库/" title="数据库">数据库<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/mysql/" title="mysql">mysql<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/debug/" title="debug">debug<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/jpda/" title="jpda">jpda<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/cmd/" title="cmd">cmd<sup>1</sup></a></li>
 			
 		
 			
@@ -993,11 +1013,11 @@
 			
 		
 			
-				<li><a href="/tags/爬虫/" title="爬虫">爬虫<sup>1</sup></a></li>
+				<li><a href="/tags/note/" title="note">note<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/maven/" title="maven">maven<sup>1</sup></a></li>
+				<li><a href="/tags/linux/" title="linux">linux<sup>1</sup></a></li>
 			
 		
 		</ul>

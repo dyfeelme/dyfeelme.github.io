@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://dyfeelme.github.io/2016/04/19/howto-use-git/</loc>
+    
+    <lastmod>2016-04-27T05:36:31.962Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://dyfeelme.github.io/2014/08/26/stack-overflow-spring-with-quartz/</loc>
     
     <lastmod>2016-04-27T01:39:37.073Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://dyfeelme.github.io/2016/01/26/note-about-shell-scp/</loc>
     
     <lastmod>2016-04-27T01:37:09.452Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://dyfeelme.github.io/2016/04/19/howto-use-git/</loc>
-    
-    <lastmod>2016-04-27T01:36:26.655Z</lastmod>
     
   </url>
   
