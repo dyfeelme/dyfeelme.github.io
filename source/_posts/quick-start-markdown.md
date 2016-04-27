@@ -2,11 +2,9 @@
 title: 开始Markdown写作
 tags:
   - quickstart
-  - howto
   - markdown
 categories:
-  - howto
-  - markdown
+  - blog
 date: 2015-04-26 15:13:37
 ---
 

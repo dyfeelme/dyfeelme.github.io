@@ -4,10 +4,9 @@ tags:
   - eclipse
   - debug
   - jpda
-  - maven
 categories:
-  - howto
-  - coding
+  - java
+  - ide
 date: 2014-08-13 14:58:20
 ---
 

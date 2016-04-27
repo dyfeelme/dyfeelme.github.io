@@ -1,11 +1,9 @@
 ---
 title: Docker 入门
 tags:
-  - howto
   - docker
 categories:
-  - howto
-  - coding
+  - docker
 date: 2016-01-13 18:00:45
 ---
 

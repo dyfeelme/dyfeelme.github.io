@@ -4,8 +4,7 @@ tags:
   - java
   - 爬虫
 categories:
-  - java
-  - 爬虫
+  - 爬虫技术
 date: 2015-02-26 14:34:34
 ---
 

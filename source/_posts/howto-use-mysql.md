@@ -1,13 +1,11 @@
 ---
 title: Mysql数据库笔记
 tags:
-  - howto
-  - database
+  - 数据库
   - mysql
 categories:
-  - howto
-  - database
-date: 2016-04-26 19:53:48
+  - 数据库
+date: 2014-08-26 19:53:48
 ---
 
 

@@ -1,13 +1,12 @@
 ---
 title: 使用Eclipse IDE
 tags:
-  - howto
   - java
   - ide
   - eclipse
 categories:
-  - howto
-  - coding
+  - java
+  - ide
 date: 2014-04-14 19:00:21
 ---
 

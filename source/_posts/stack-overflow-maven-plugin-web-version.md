@@ -2,11 +2,11 @@
 title: 关于升级maven构建webapp版本的问题
 tags:
   - stackoverflow
+  - java
   - maven
-  - webapp
 categories:
   - stackoverflow
-  - maven
+  - java
 date: 2015-04-26 10:32:30
 ---
 

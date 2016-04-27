@@ -2,12 +2,13 @@
 title: 关于Spring整合Quartz的问题
 tags:
   - stackoverflow
+  - java
   - spring
   - quartz
 categories:
   - stackoverflow
-  - quartz
-date: 2016-04-26 20:03:56
+  - java
+date: 2014-08-26 20:03:56
 ---
 
 

@@ -2,10 +2,10 @@
 title: 代码片段-字母转数字
 tags:
   - java
-  - util
+  - utils
 categories:
-  - coding
   - java
+  - utils
 date: 2012-03-13 15:39:54
 ---
 

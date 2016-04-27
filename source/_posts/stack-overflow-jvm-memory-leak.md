@@ -2,10 +2,11 @@
 title: JVM内存溢出相关问题
 tags:
   - stackoverflow
+  - java
   - jvm
 categories:
   - stackoverflow
-  - jvm
+  - java
 date: 2015-07-13 12:38:16
 ---
 

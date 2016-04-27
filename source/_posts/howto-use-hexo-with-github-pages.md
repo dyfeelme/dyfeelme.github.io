@@ -6,7 +6,7 @@ tags:
  - github
  - blog
 categories:
- - howto
+ - blog
  - hexo
 comments: true
 ---

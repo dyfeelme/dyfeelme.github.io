@@ -1,12 +1,11 @@
 ---
 title: Windows终端神器Cmder
 tags:
-  - howto
+  - 开发环境
   - windows
-  - shell
   - cmd
 categories:
-  - howto
+  - 开发环境
   - windows
 date: 2016-03-26 10:08:57
 ---

@@ -3,10 +3,9 @@ title: 打造自己的windows开发环境
 tags:
   - windows
   - 开发环境
-  - dotfiles
   - choco
 categories:
-  - howto
+  - 开发环境
   - windows
 date: 2015-12-11 14:16:12
 ---
