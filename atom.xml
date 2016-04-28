@@ -187,9 +187,9 @@
       <category term="开发环境" scheme="http://dyfeelme.github.io/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
     
     
-      <category term="windows" scheme="http://dyfeelme.github.io/tags/windows/"/>
-    
       <category term="开发环境" scheme="http://dyfeelme.github.io/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    
+      <category term="windows" scheme="http://dyfeelme.github.io/tags/windows/"/>
     
       <category term="cmd" scheme="http://dyfeelme.github.io/tags/cmd/"/>
     
@@ -350,9 +350,9 @@
       <category term="开发环境" scheme="http://dyfeelme.github.io/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
     
     
-      <category term="windows" scheme="http://dyfeelme.github.io/tags/windows/"/>
-    
       <category term="开发环境" scheme="http://dyfeelme.github.io/tags/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    
+      <category term="windows" scheme="http://dyfeelme.github.io/tags/windows/"/>
     
       <category term="choco" scheme="http://dyfeelme.github.io/tags/choco/"/>
     
@@ -772,9 +772,9 @@
     
       <category term="java" scheme="http://dyfeelme.github.io/tags/java/"/>
     
-      <category term="ide" scheme="http://dyfeelme.github.io/tags/ide/"/>
-    
       <category term="eclipse" scheme="http://dyfeelme.github.io/tags/eclipse/"/>
+    
+      <category term="ide" scheme="http://dyfeelme.github.io/tags/ide/"/>
     
   </entry>
   
