@@ -580,9 +580,9 @@
     
       <category term="java" scheme="http://dyfeelme.github.io/tags/java/"/>
     
-      <category term="spring" scheme="http://dyfeelme.github.io/tags/spring/"/>
-    
       <category term="stackoverflow" scheme="http://dyfeelme.github.io/tags/stackoverflow/"/>
+    
+      <category term="spring" scheme="http://dyfeelme.github.io/tags/spring/"/>
     
       <category term="quartz" scheme="http://dyfeelme.github.io/tags/quartz/"/>
     
@@ -772,9 +772,9 @@
     
       <category term="java" scheme="http://dyfeelme.github.io/tags/java/"/>
     
-      <category term="eclipse" scheme="http://dyfeelme.github.io/tags/eclipse/"/>
-    
       <category term="ide" scheme="http://dyfeelme.github.io/tags/ide/"/>
+    
+      <category term="eclipse" scheme="http://dyfeelme.github.io/tags/eclipse/"/>
     
   </entry>
   
