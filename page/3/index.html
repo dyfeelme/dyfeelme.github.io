@@ -1,0 +1,526 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Rabbit Saying</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="dyfeelme">
+    
+
+    
+    <meta name="description" content="James&apos;s Blog.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rabbit Saying">
+<meta property="og:url" content="http://dyfeelme.github.io/page/3/index.html">
+<meta property="og:site_name" content="Rabbit Saying">
+<meta property="og:description" content="James&apos;s Blog.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rabbit Saying">
+<meta name="twitter:description" content="James&apos;s Blog.">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Rabbit Saying" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Rabbit Saying" title="Rabbit Saying"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Rabbit Saying">Rabbit Saying</a></h1>
+				<h2 class="blog-motto">兔言兔语</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+						<form class="search" action="http://zhannei.baidu.com/cse/search" target="_blank">
+							<label>Search</label>
+						<input name="s" type="hidden" value= 13350346357769200000 ><input type="text" name="q" size="30" placeholder="搜索"><br>
+						</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main">
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2013/04/28/quick-start-appfuse/" title="使用AppFuse快速开始SSH项目" itemprop="url">使用AppFuse快速开始SSH项目</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="dyfeelme" target="_blank" itemprop="author">dyfeelme</a>
+		
+  <p class="article-time">
+    <time datetime="2013-04-28T04:38:12.000Z" itemprop="datePublished"> 发表于 2013-04-28</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><img src="/images/apf-logo.jpg" class="AppFuse Logo" width="38" height="38">
+<p><a href="http://appfuse.org/display/APF/Home" target="_blank" rel="external">AppFuse</a>是一款用来快速构建WEB应用的全栈框架。</p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><p>AppFuse作为一个社区比较活跃的快速开发框架，主要有以下特点：</p>
+<ul>
+<li>前端使用 Bootstrap and jQuery</li>
+<li>后端使用 Maven, Hibernate, Spring and Spring Security</li>
+<li>支持 Java 7, Annotations, JSP 2.1, Servlet 3.0</li>
+<li>支持主流Web Frameworks: GWT, JSF, Struts 2, Spring MVC, Tapestry 5, Wicket</li>
+<li>JPA Support </li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>AppFuse需要安装jdk和maven，环境配置本文不再赘述，请参考其他文章。</p>
+<h2 id="起步"><a href="#起步" class="headerlink" title="起步"></a>起步</h2><p>有了maven和jdk环境，我们便可以开始初始化一个项目了，如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mvn archetype:generate -B -DarchetypeGroupId=org.appfuse.archetypes -DarchetypeArtifactId=appfuse-basic-spring-archetype -DarchetypeVersion=<span class="number">3.5</span>.0 -DgroupId=com.dy.framework -DartifactId=appfuse-web -DarchetypeRepository=https:<span class="comment">//oss.sonatype.org/content/repositories/appfuse</span></span><br></pre></td></tr></table></figure></p>
+<p>此命令将会生成一个appfuse-web的项目。<br>官方提供了一个可以快速生成定制命令的页面，<a href="http://appfuse.org/display/APF/AppFuse+QuickStart" target="_blank" rel="external">详情</a></p>
+<h2 id="配置数据库"><a href="#配置数据库" class="headerlink" title="配置数据库"></a>配置数据库</h2><p>数据库的配置只需要在项目pom.xml中的<em><properties></properties></em>结点内,增加以下参数：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hibernate.dialect</span>&gt;</span>org.hibernate.dialect.MySQLDialect<span class="tag">&lt;/<span class="name">hibernate.dialect</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">jdbc.groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">jdbc.groupId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">jdbc.artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">jdbc.artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">jdbc.version</span>&gt;</span>5.1.27<span class="tag">&lt;/<span class="name">jdbc.version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">jdbc.driverClassName</span>&gt;</span>com.mysql.jdbc.Driver<span class="tag">&lt;/<span class="name">jdbc.driverClassName</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">jdbc.url</span>&gt;</span></span><br><span class="line">    &lt;![CDATA[jdbc:mysql://localhost/$&#123;db.name&#125;?createDatabaseIfNotExist=true&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf-8&amp;amp;autoReconnect=true]]&gt;</span><br><span class="line"><span class="tag">&lt;/<span class="name">jdbc.url</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">jdbc.username</span>&gt;</span>root<span class="tag">&lt;/<span class="name">jdbc.username</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">jdbc.password</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">jdbc.validationQuery</span>&gt;</span>&lt;![CDATA[SELECT 1 + 1]]&gt;<span class="tag">&lt;/<span class="name">jdbc.validationQuery</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>上述这些参数已经在maven的父pom中指定，实际的项目需要重写这些配置。<br>接下来我们需要配置一下数据库：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ mysql -u root -p</span><br><span class="line">mysql &gt; create database db_appfuse_web default charactor <span class="built_in">set</span> utf8;</span><br><span class="line">mysql &gt; grant all privileges on db_appfuse_web.* to admin@<span class="string">'%'</span> identified by <span class="string">'123456'</span>;</span><br><span class="line">mysql &gt; flush privileges;</span><br></pre></td></tr></table></figure></p>
+<p>如上，我们建立了一个名为db_appfuse_web的数据库，并且新建并授权了名为admin的用户可以远程访问的权限。详情请参考另一篇博文[Mysql数据库笔记]。</p>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ mvn jetty:run</span><br></pre></td></tr></table></figure>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://appfuse.org/display/APF/Reference+Guide" target="_blank" rel="external">AppFuse文档</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/java/">java</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/java/">java</a><a href="/tags/ssh/">ssh</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2013/04/28/quick-start-appfuse/#comments" class="ds-thread-count comments-count-link" data-thread-key="2013/04/28/quick-start-appfuse/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2012/03/13/a-piece-of-code-char2num/" title="代码片段-字母转数字" itemprop="url">代码片段-字母转数字</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="dyfeelme" target="_blank" itemprop="author">dyfeelme</a>
+		
+  <p class="article-time">
+    <time datetime="2012-03-13T07:39:54.000Z" itemprop="datePublished"> 发表于 2012-03-13</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>本工具类可以匹配字符串中字母，并将其转换为数字，反之可行，适用于小范围查找替换。</p>
+<h2 id="大写字母转数字工具类"><a href="#大写字母转数字工具类" class="headerlink" title="大写字母转数字工具类"></a>大写字母转数字工具类</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">public static String char2num(String code)&#123;</span><br><span class="line">	Pattern pat = Pattern.compile(REG_ALL_LETTERS);</span><br><span class="line">	Matcher mat = pat.matcher(code);</span><br><span class="line">	</span><br><span class="line">	//遍历所有匹配项</span><br><span class="line">	StringBuffer sb = new StringBuffer();</span><br><span class="line">	while(mat.find())&#123;</span><br><span class="line">		mat.appendReplacement(sb,c2i(mat.group()));</span><br><span class="line">	&#125;</span><br><span class="line">	mat.appendTail(sb);</span><br><span class="line"></span><br><span class="line">	return sb.toString();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private static String c2i()&#123;</span><br><span class="line">	int i = c.charAt(0) - NUM_C2I;</span><br><span class="line">	return Integer.toString(i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/java/">java</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/java/">java</a><a href="/tags/utils/">utils</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="/2012/03/13/a-piece-of-code-char2num/#comments" class="ds-thread-count comments-count-link" data-thread-key="2012/03/13/a-piece-of-code-char2num/" data-count-type="comments">&nbsp;</a>
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+
+  <nav id="page-nav" class="clearfix">
+    <a class="extend prev" rel="prev" href="/page/2/"><span></span>Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+</div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=5900616546&verifier=41008a1f&dpc=1"></iframe>
+</div>
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/docker/" title="docker">docker<sup>1</sup></a></li>
+		  
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/java/" title="java">java<sup>4</sup></a></li>
+		  
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/linux/" title="linux">linux<sup>1</sup></a></li>
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/stackoverflow/" title="stackoverflow">stackoverflow<sup>5</sup></a></li>
+		  
+		
+		  
+		
+		  
+			<li><a href="/categories/博客杂言/" title="博客杂言">博客杂言<sup>3</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/开发环境/" title="开发环境">开发环境<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/数据库/" title="数据库">数据库<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/爬虫相关/" title="爬虫相关">爬虫相关<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/编程技术/" title="编程技术">编程技术<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/04/">四月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/03/">三月 2012</a><span class="archive-list-count">1</span></li></ul>
+  </div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/choco/" style="font-size: 10px;">choco</a> <a href="/tags/cmd/" style="font-size: 10px;">cmd</a> <a href="/tags/debug/" style="font-size: 10px;">debug</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/eclipse/" style="font-size: 12.5px;">eclipse</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/http2/" style="font-size: 10px;">http2</a> <a href="/tags/ide/" style="font-size: 10px;">ide</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/jpda/" style="font-size: 10px;">jpda</a> <a href="/tags/jvm/" style="font-size: 12.5px;">jvm</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/note/" style="font-size: 10px;">note</a> <a href="/tags/quartz/" style="font-size: 10px;">quartz</a> <a href="/tags/quickstart/" style="font-size: 10px;">quickstart</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/spring/" style="font-size: 10px;">spring</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/stackoverflow/" style="font-size: 17.5px;">stackoverflow</a> <a href="/tags/utils/" style="font-size: 10px;">utils</a> <a href="/tags/windows/" style="font-size: 12.5px;">windows</a> <a href="/tags/分布式/" style="font-size: 10px;">分布式</a> <a href="/tags/开发环境/" style="font-size: 12.5px;">开发环境</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a> <a href="/tags/爬虫/" style="font-size: 10px;">爬虫</a> <a href="/tags/版本控制/" style="font-size: 10px;">版本控制</a>
+    </div>
+  </div>
+
+
+  
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://github.com" target="_blank" title="开源项目的'大众点评'">Github</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Good Good Study,Day Day Up! <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/dyfeelme" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/dyfeelme" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:dyfeelme@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 
+		
+		<a href="/about" target="_blank" title="dyfeelme">dyfeelme</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?f8e28a6e92864e02f25ba173648cb75a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+ </html>

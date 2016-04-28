@@ -15,9 +15,9 @@
 分布式版本控制体系分布式版本控制体系，英文全称Distributed Version Control System，简称 DVCS。特点：
 
 记录快照而非差异
+本地保存完整镜像
 
-
-常用命令12345678910111213141516">
+常用命令123456789101112">
 <meta property="og:type" content="article">
 <meta property="og:title" content="版本控制工具-Git">
 <meta property="og:url" content="http://dyfeelme.github.io/2016/04/19/howto-use-git/index.html">
@@ -26,19 +26,19 @@
 分布式版本控制体系分布式版本控制体系，英文全称Distributed Version Control System，简称 DVCS。特点：
 
 记录快照而非差异
+本地保存完整镜像
 
-
-常用命令12345678910111213141516">
-<meta property="og:updated_time" content="2016-04-27T05:36:31.962Z">
+常用命令123456789101112">
+<meta property="og:updated_time" content="2016-04-28T06:10:56.569Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="版本控制工具-Git">
 <meta name="twitter:description" content="简介Git是目前最为流行的分布式版本控制工具之一，有别于VCS、SVN等集中式版本控制系统，Git不需要单独提供集中管控的服务器，因此不存在单点故障或导致服务器数据丢失的致命缺陷。
 分布式版本控制体系分布式版本控制体系，英文全称Distributed Version Control System，简称 DVCS。特点：
 
 记录快照而非差异
+本地保存完整镜像
 
-
-常用命令12345678910111213141516">
+常用命令123456789101112">
 
     
     <link rel="alternative" href="/atom.xml" title="Rabbit Saying" type="application/atom+xml">
@@ -121,7 +121,7 @@
 <h2 id="分布式版本控制体系"><a href="#分布式版本控制体系" class="headerlink" title="分布式版本控制体系"></a>分布式版本控制体系</h2><p>分布式版本控制体系，英文全称Distributed Version Control System，简称 DVCS。<br>特点：</p>
 <ul>
 <li>记录快照而非差异</li>
-<li></li>
+<li>本地保存完整镜像</li>
 </ul>
 <h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">usage: git [--version] [--help] [-C &lt;path&gt;] [-c name=value]</span><br><span class="line">           [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]</span><br><span class="line">           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]</span><br><span class="line">           [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]</span><br><span class="line">           &lt;<span class="built_in">command</span>&gt; [&lt;args&gt;]</span><br><span class="line"></span><br><span class="line">These are common Git commands used <span class="keyword">in</span> various situations:</span><br><span class="line"></span><br><span class="line">start a working area (see also: git <span class="built_in">help</span> tutorial)</span><br><span class="line">   <span class="built_in">clone</span>      Clone a repository into a new directory</span><br><span class="line">   init       Create an empty Git repository or reinitialize an existing one</span><br><span class="line"></span><br><span class="line">work on the current change (see also: git <span class="built_in">help</span> everyday)</span><br><span class="line">   add        Add file contents to the index</span><br><span class="line">   mv         Move or rename a file, a directory, or a symlink</span><br><span class="line">   reset      Reset current HEAD to the specified state</span><br><span class="line">   rm         Remove files from the working tree and from the index</span><br><span class="line"></span><br><span class="line">examine the <span class="built_in">history</span> and state (see also: git <span class="built_in">help</span> revisions)</span><br><span class="line">   bisect     Use binary search to find the commit that introduced a bug</span><br><span class="line">   grep       Print lines matching a pattern</span><br><span class="line">   <span class="built_in">log</span>        Show commit logs</span><br><span class="line">   show       Show various types of objects</span><br><span class="line">   status     Show the working tree status</span><br><span class="line"></span><br><span class="line">grow, mark and tweak your common <span class="built_in">history</span></span><br><span class="line">   branch     List, create, or delete branches</span><br><span class="line">   checkout   Switch branches or restore working tree files</span><br><span class="line">   commit     Record changes to the repository</span><br><span class="line">   diff       Show changes between commits, commit and working tree, etc</span><br><span class="line">   merge      Join two or more development histories together</span><br><span class="line">   rebase     Reapply commits on top of another base tip</span><br><span class="line">   tag        Create, list, delete or verify a tag object signed with GPG</span><br><span class="line"></span><br><span class="line">collaborate (see also: git <span class="built_in">help</span> workflows)</span><br><span class="line">   fetch      Download objects and refs from another repository</span><br><span class="line">   pull       Fetch from and integrate with another repository or a <span class="built_in">local</span> branch</span><br><span class="line">   push       Update remote refs along with associated objects</span><br><span class="line"></span><br><span class="line"><span class="string">'git help -a'</span> and <span class="string">'git help -g'</span> list available subcommands and some</span><br><span class="line">concept guides. See <span class="string">'git help &lt;command&gt;'</span> or <span class="string">'git help &lt;concept&gt;'</span></span><br><span class="line">to <span class="built_in">read</span> about a specific subcommand or concept.</span><br></pre></td></tr></table></figure>
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ git config --list</span><br><span class="line">初次使用推荐配置</span><br><span class="line">$ git config --global user.name <span class="string">"xxx"</span></span><br><span class="line">$ git config --global user.email xxx@xxx.com</span><br><span class="line">配置默认文本编辑器</span><br><span class="line">$ git config --global core.editor emacs [可选vim, vi等]</span><br><span class="line">配置默认差异比较工具</span><br><span class="line">$ git config --global merge.tool vimdiff [可选kdiff3，tkdiff，meld，xxdiff，emerge，vimdiff，gvimdiff，ecmerge，和 opendiff 等]</span><br><span class="line">更多参考</span><br><span class="line">$ git <span class="built_in">help</span> config</span><br></pre></td></tr></table></figure>
@@ -145,7 +145,7 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/版本控制/">版本控制</a>
+  <a class="article-category-link" href="/categories/开发环境/">开发环境</a>
 </div>
 
 
@@ -196,6 +196,14 @@
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2016/04/28/quick-start-hazelcast/" title="高性能in-memory分布式平台-Hazelcast">
+  <strong>上一篇：</strong><br/>
+  <span>
+  高性能in-memory分布式平台-Hazelcast</span>
+</a>
+</div>
+
 
 <div class="next">
 <a href="/2016/04/15/quick-start-http2/"  title="HTTP2启航">
@@ -227,14 +235,14 @@
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
-  
-<div class="github-card">
-<p class="asidetitle">Github 名片</p>
-<div class="github-card" data-github="https://github.com/dyfeelme" data-width="220" data-height="119" data-theme="medium">
-<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
-  </div>
 
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=5900616546&verifier=41008a1f&dpc=1"></iframe>
+</div>
 
 
   
@@ -242,14 +250,6 @@
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-		  
-		
-		  
-			<li><a href="/categories/blog/" title="blog">blog<sup>3</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/coding/" title="coding">coding<sup>1</sup></a></li>
 		  
 		
 		  
@@ -261,24 +261,6 @@
 		  
 		
 		  
-			<li><a href="/categories/stackoverflow/git/" title="git">git<sup>2</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/blog/hexo/" title="hexo">hexo<sup>1</sup></a></li>
-		  
-		
-		  
-		
-		  
-			<li><a href="/categories/java/ide/" title="ide">ide<sup>2</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/stackoverflow/java/" title="java">java<sup>3</sup></a></li>
-		  
-		
-		  
 		
 		  
 			<li><a href="/categories/java/" title="java">java<sup>4</sup></a></li>
@@ -287,11 +269,9 @@
 		  
 		
 		  
-			<li><a href="/categories/java/jvm/" title="jvm">jvm<sup>1</sup></a></li>
-		  
 		
 		  
-			<li><a href="/categories/操作系统/linux/" title="linux">linux<sup>1</sup></a></li>
+			<li><a href="/categories/linux/" title="linux">linux<sup>1</sup></a></li>
 		  
 		
 		  
@@ -313,21 +293,13 @@
 		  
 		
 		  
-			<li><a href="/categories/java/utils/" title="utils">utils<sup>1</sup></a></li>
+		
+		  
+			<li><a href="/categories/博客杂言/" title="博客杂言">博客杂言<sup>3</sup></a></li>
 		  
 		
 		  
-		
-		  
-			<li><a href="/categories/开发环境/windows/" title="windows">windows<sup>2</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/开发环境/" title="开发环境">开发环境<sup>2</sup></a></li>
-		  
-		
-		  
-			<li><a href="/categories/操作系统/" title="操作系统">操作系统<sup>1</sup></a></li>
+			<li><a href="/categories/开发环境/" title="开发环境">开发环境<sup>4</sup></a></li>
 		  
 		
 		  
@@ -335,11 +307,11 @@
 		  
 		
 		  
-			<li><a href="/categories/爬虫技术/" title="爬虫技术">爬虫技术<sup>1</sup></a></li>
+			<li><a href="/categories/爬虫相关/" title="爬虫相关">爬虫相关<sup>1</sup></a></li>
 		  
 		
 		  
-			<li><a href="/categories/版本控制/" title="版本控制">版本控制<sup>1</sup></a></li>
+			<li><a href="/categories/编程技术/" title="编程技术">编程技术<sup>1</sup></a></li>
 		  
 		
 		</ul>
@@ -347,92 +319,22 @@
 
 
   
-<div class="tagslist">
-	<p class="asidetitle">标签</p>
-		<ul class="clearfix">
-		
-			
-				<li><a href="/tags/java/" title="java">java<sup>7</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/stackoverflow/" title="stackoverflow">stackoverflow<sup>5</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/git/" title="git">git<sup>3</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/eclipse/" title="eclipse">eclipse<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/开发环境/" title="开发环境">开发环境<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/windows/" title="windows">windows<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/jvm/" title="jvm">jvm<sup>2</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/版本控制/" title="版本控制">版本控制<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/spring/" title="spring">spring<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/hexo/" title="hexo">hexo<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/github/" title="github">github<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/blog/" title="blog">blog<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/数据库/" title="数据库">数据库<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/mysql/" title="mysql">mysql<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/debug/" title="debug">debug<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/jpda/" title="jpda">jpda<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/cmd/" title="cmd">cmd<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/choco/" title="choco">choco<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/note/" title="note">note<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/linux/" title="linux">linux<sup>1</sup></a></li>
-			
-		
-		</ul>
-</div>
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">三月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">一月 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">二月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/08/">八月 2014</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/07/">七月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/04/">四月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/04/">四月 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2012/03/">三月 2012</a><span class="archive-list-count">1</span></li></ul>
+  </div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/blog/" style="font-size: 10px;">blog</a> <a href="/tags/choco/" style="font-size: 10px;">choco</a> <a href="/tags/cmd/" style="font-size: 10px;">cmd</a> <a href="/tags/debug/" style="font-size: 10px;">debug</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/eclipse/" style="font-size: 12.5px;">eclipse</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/http2/" style="font-size: 10px;">http2</a> <a href="/tags/ide/" style="font-size: 10px;">ide</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/jpda/" style="font-size: 10px;">jpda</a> <a href="/tags/jvm/" style="font-size: 12.5px;">jvm</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/note/" style="font-size: 10px;">note</a> <a href="/tags/quartz/" style="font-size: 10px;">quartz</a> <a href="/tags/quickstart/" style="font-size: 10px;">quickstart</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/spring/" style="font-size: 10px;">spring</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/tags/stackoverflow/" style="font-size: 17.5px;">stackoverflow</a> <a href="/tags/utils/" style="font-size: 10px;">utils</a> <a href="/tags/windows/" style="font-size: 12.5px;">windows</a> <a href="/tags/分布式/" style="font-size: 10px;">分布式</a> <a href="/tags/开发环境/" style="font-size: 12.5px;">开发环境</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a> <a href="/tags/爬虫/" style="font-size: 10px;">爬虫</a> <a href="/tags/版本控制/" style="font-size: 10px;">版本控制</a>
+    </div>
+  </div>
+
+
+  
 
 
   <div class="linkslist">
@@ -460,19 +362,6 @@
     </ul>
 </div>
 
-  
-
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
-</div>
-
-  <div class="weiboshow">
-  <p class="asidetitle">新浪微博</p>
-    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=5900616546&verifier=41008a1f&dpc=1"></iframe>
-</div>
-
-
 </aside>
 </div>
     </div>
@@ -494,7 +383,7 @@
 		<a href="http://weibo.com/dyfeelme" target="_blank" class="icon-weibo" title="微博"></a>
 		
 		
-		<a href="https://github.com/https://github.com/dyfeelme" target="_blank" class="icon-github" title="github"></a>
+		<a href="https://github.com/dyfeelme" target="_blank" class="icon-github" title="github"></a>
 		
 		
 		
