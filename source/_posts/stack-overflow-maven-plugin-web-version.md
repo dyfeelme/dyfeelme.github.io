@@ -6,7 +6,6 @@ tags:
   - maven
 categories:
   - stackoverflow
-  - java
 date: 2015-04-26 10:32:30
 ---
 

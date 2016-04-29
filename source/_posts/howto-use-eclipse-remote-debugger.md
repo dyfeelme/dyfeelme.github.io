@@ -6,7 +6,6 @@ tags:
   - jpda
 categories:
   - java
-  - ide
 date: 2014-08-13 14:58:20
 ---
 
@@ -38,7 +37,7 @@ suspend=y这个选项很重要。如果你想从Tomcat启动的一开始就进�
 
 配置Eclipse调试器
 打开eclipse -> run -> run config，如图：
-![Eclipse运行配置窗口](http://www.ibm.com/developerworks/cn/opensource/os-eclipse-javadebug/debugconfig.jpg)
+{% img Eclipse运行配置窗口 http://www.ibm.com/developerworks/cn/opensource/os-eclipse-javadebug/debugconfig.jpg 500 500 %}
 
 ## 参考 ##
 [维基百科](https://en.wikipedia.org/wiki/Java_Platform_Debugger_Architecture)

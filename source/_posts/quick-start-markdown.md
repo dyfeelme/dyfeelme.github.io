@@ -4,7 +4,7 @@ tags:
   - quickstart
   - markdown
 categories:
-  - blog
+  - 博客杂言
 date: 2015-04-26 15:13:37
 ---
 

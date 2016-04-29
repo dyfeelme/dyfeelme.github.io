@@ -5,7 +5,6 @@ tags:
   - git
 categories:
   - stackoverflow
-  - git
 date: 2016-04-13 11:00:25
 ---
 

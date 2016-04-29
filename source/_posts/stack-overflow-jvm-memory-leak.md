@@ -6,7 +6,6 @@ tags:
   - jvm
 categories:
   - stackoverflow
-  - java
 date: 2015-07-13 12:38:16
 ---
 

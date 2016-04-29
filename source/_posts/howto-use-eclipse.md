@@ -5,8 +5,7 @@ tags:
   - ide
   - eclipse
 categories:
-  - java
-  - ide
+  - 开发环境
 date: 2014-04-14 19:00:21
 ---
 

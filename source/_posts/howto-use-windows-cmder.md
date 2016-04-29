@@ -6,7 +6,6 @@ tags:
   - cmd
 categories:
   - 开发环境
-  - windows
 date: 2016-03-26 10:08:57
 ---
 
@@ -29,7 +28,7 @@ Ctrl + w 关闭当前Tab,会弹出提示，确认关闭
 
 ## 配置
 邮件标题栏，或者使用快捷键Win+Alt+p打开设置面板，如图：
-![Setting](../images/howto-use-windows-cmder-setting.png)
+![Setting](/images/howto-use-windows-cmder-setting.png)
 
 * 添加自定义Task
 

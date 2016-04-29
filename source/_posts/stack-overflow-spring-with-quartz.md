@@ -7,7 +7,6 @@ tags:
   - quartz
 categories:
   - stackoverflow
-  - java
 date: 2014-08-26 20:03:56
 ---
 

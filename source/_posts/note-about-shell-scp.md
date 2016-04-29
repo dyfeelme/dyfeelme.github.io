@@ -5,7 +5,6 @@ tags:
   - linux
   - shell
 categories:
-  - 操作系统
   - linux
 date: 2016-01-26 19:24:28
 ---

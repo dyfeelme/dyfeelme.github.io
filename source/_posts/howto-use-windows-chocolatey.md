@@ -6,7 +6,6 @@ tags:
   - choco
 categories:
   - 开发环境
-  - windows
 date: 2015-12-11 14:16:12
 ---
 
