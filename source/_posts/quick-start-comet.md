@@ -24,5 +24,3 @@ iframe流方式的优点是浏览器兼容好，Google公司在一些产品中�
 
 
 ## 参考 ##
-
-[Wiki-Comet](https://en.wikipedia.org/wiki/Comet_(programming))

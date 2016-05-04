@@ -1,4 +1,4 @@
 ---
-title: quick-start-mongodb
+title: MongoDB
 tags:
 ---
