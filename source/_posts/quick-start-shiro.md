@@ -11,9 +11,8 @@ categories:
 date: 2014-09-03 11:31:31
 ---
 
-
-## 概述 ##
 Apache [Shiro](http://shiro.apache.org/) 是Apache的一个子项目，跟[Spring Security](http://projects.spring.io/spring-security/)类似，用于Java项目集成认证授权功能，相比于Spring Security,Shiro更为简单易用，提供了认证、授权、加密、会话管理等。
+<!-- more -->
 
 ## 核心 ##
 Shiro主要有三个核心组件：

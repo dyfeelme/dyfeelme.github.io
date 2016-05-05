@@ -7,9 +7,8 @@ categories:
 date: 2016-01-29 10:19:34
 ---
 
-
-## 简介 ##
 [Kali Linux](https://www.kali.org/)是一款基于Debain系统，并专注于安全领域的操作系统，设计用于数字取证和渗透测试。Kali Linux的前身为[BackTrack](http://www.backtrack-linux.org/)（简称BT）。
+<!-- more -->
 
 ## 安装 ##
 本文将介绍Kali Linux发行组推荐的Portable安装方式，即安装在便携存储设备的方式，我们需要准备如下工具：

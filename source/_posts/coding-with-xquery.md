@@ -6,10 +6,8 @@ categories:
   - xml
 date: 2014-11-13 10:48:08
 ---
-
-
-## 概述 ##
 [XQuery](http://www.w3school.com.cn/xquery/index.asp)是一门用来检索XML的语言，类似于SQL于关系型数据库，通过XQuery可以对XML文档进行帅选和查找。 因为XQuery以XPath为基础，所以还未了解XPath的同学请移步作者另一篇博文[XPath学习笔记]()。
+<!-- more -->
 
 ## 语法 ##
 一些基本的语法规则：

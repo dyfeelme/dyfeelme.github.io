@@ -7,6 +7,9 @@ categories:
 date: 2015-12-04 12:44:12
 ---
 
+JDK1.5以后新增了java.util.concurrent，俗称并发包，涵盖和可用于支持多线程并发解决方案的多种工具集合。
+<!-- more -->
+
 ## Feature接口 ##
 
 * boolean cancel(boolean mayInterruptIfRunning); 

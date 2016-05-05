@@ -8,6 +8,8 @@ categories:
 date: 2015-04-21 11:15:22
 ---
 
+The submodule xxx was not properly initialized with a .gitmodules file
+<!-- more -->
 
 ## 问题描述 ##
 

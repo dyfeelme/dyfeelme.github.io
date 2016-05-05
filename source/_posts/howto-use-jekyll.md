@@ -4,15 +4,15 @@ tags:
  - 博客
  - blog
 categories:
- - 博客杂言
+ - 兔言兔语
 date: 2016-03-03 13:09:11
 ---
 
-## 简介 ##
 {% blockquote Jekyll http://www.jekyllcn.com %}
 [Jekyll](http://jekyllcn.com/docs/home/) 是一个简单的博客形态的静态站点生产机器。它有一个模版目录，其中包含原始文本格式的文档，通过一个转换器（如 Markdown）和我们的 Liquid 渲染器转化成一个完整的可发布的静态网站，你可以发布在任何你喜爱的服务器上。
 {% endblockquote %}
 Jekyll也是Github官方推荐的博客系统，可以免费在[Github Page](https://pages.github.com/)建立属于自己的个人博客系统。
+<!-- more -->
 
 ## 起步 ##
 jekyll是基于ruby构建的，所以需要先安装ruby组件。当然一些插件也依赖于nodejs，请一并安装。

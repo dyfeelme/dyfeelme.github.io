@@ -8,10 +8,10 @@ categories:
   - java
 date: 2014-08-13 14:58:20
 ---
-
-
-## 简介 ##
-> JPDA（Java Platform Debugger Architecture）是 Java 平台调试体系结构的缩写，通过 JPDA 提供的 API，开发人员可以方便灵活的搭建 Java 调试应用程序。 JPDA 主要由三个部分组成：Java 虚拟机工具接口（JVMTI），Java 调试线协议（JDWP），以及 Java 调试接口（JDI）-- 引至：IBM DeveloperWorks
+{% blockquote IBM DeveloperWorks %}
+JPDA（Java Platform Debugger Architecture）是 Java 平台调试体系结构的缩写，通过 JPDA 提供的 API，开发人员可以方便灵活的搭建 Java 调试应用程序。 JPDA 主要由三个部分组成：Java 虚拟机工具接口（JVMTI），Java 调试线协议（JDWP），以及 Java 调试接口（JDI）。
+{% endblockquote %}
+<!-- more -->
 
 ## 实践 ##
 

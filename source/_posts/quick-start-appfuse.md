@@ -8,10 +8,9 @@ categories:
 date: 2013-04-28 12:38:12
 ---
 
-
-## 简介 ##
 {% img AppFuse Logo /images/apf-logo.jpg 38 38 %}
 [AppFuse](http://appfuse.org/display/APF/Home)是一款用来快速构建WEB应用的全栈框架。
+<!-- more -->
 
 ## 特性 ##
 AppFuse作为一个社区比较活跃的快速开发框架，主要有以下特点：

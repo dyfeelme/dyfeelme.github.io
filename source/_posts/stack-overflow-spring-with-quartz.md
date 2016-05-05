@@ -10,6 +10,8 @@ categories:
 date: 2014-08-26 20:03:56
 ---
 
+Caused by: Java.lang.IncompatibleClassChangeError: class org.springframework.scheduling.quartz.CronTriggerBean has interface org.quartz.CronTrigger as super class
+<!-- more -->
 
 ## 问题描述 ##
 Caused by: Java.lang.IncompatibleClassChangeError: class org.springframework.scheduling.quartz.CronTriggerBean has interface org.quartz.CronTrigger as super class

@@ -8,6 +8,5 @@ categories:
 date: 2012-05-01 15:37:09
 ---
 
-
-## 概述 ##
-Velicity 作为Java模版引擎的经典技术之一
+Velocity 是一款经典的Java模板引擎。
+<!-- more -->

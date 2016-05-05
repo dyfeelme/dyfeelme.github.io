@@ -6,12 +6,12 @@ tags:
  - github
  - blog
 categories:
- - 博客杂言
+ - 兔言兔语
 ---
 
-## 简介 ##
 {% img hexo https://hexo.io/logo.svg 50 50 %}
 hexo 是一款基于nodejs搭建轻博客的快速构建器，支持多种风格、插件，一键部署等功能。
+<!-- more -->
 
 ## 初始化 ##
 ```bash

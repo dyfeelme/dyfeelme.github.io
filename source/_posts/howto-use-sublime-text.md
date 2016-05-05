@@ -8,8 +8,8 @@ categories:
  - 开发环境
 ---
 
-## 简介 ##
-[Sublime Text]()是一款Python实现的高效可扩展的实用编辑器。
+[Sublime Text](https://www.sublimetext.com/)是一款Python实现的高效可扩展的实用编辑器，拥有炫酷的主题，和一大堆逆袭的插件。
+<!-- more -->
 
 ## 安装 ##
 [下载地址](http://www.sublimetext.com/3)
@@ -145,29 +145,17 @@ Esc 退出光标多行选择，退出搜索框，命令框等。
 
 ``` bash
 Ctrl+Tab 按文件浏览过的顺序，切换当前窗口的标签页。
-
 Ctrl+PageDown 向左切换当前窗口的标签页。
-
 Ctrl+PageUp 向右切换当前窗口的标签页。
-
 Alt+Shift+1 窗口分屏，恢复默认1屏（非小键盘的数字）
-
 Alt+Shift+2 左右分屏-2列
-
 Alt+Shift+3 左右分屏-3列
-
 Alt+Shift+4 左右分屏-4列
-
 Alt+Shift+5 等分4屏
-
 Alt+Shift+8 垂直分屏-2屏
-
 Alt+Shift+9 垂直分屏-3屏
-
 Ctrl+K+B 开启/关闭侧边栏。
-
 F11 全屏模式
-
 Shift+F11 免打扰模式
 ```
 
@@ -208,6 +196,6 @@ Shift+F11 免打扰模式
 
 ## 主题 ##
  * Spacegray
-
+ * Material Theme
 
 ## 配置 ##

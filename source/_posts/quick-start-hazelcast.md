@@ -7,8 +7,6 @@ categoriest:
 date: 2016-04-28 11:06:48
 ---
 
-
-## 简介 ##
 {% blockquote Hazelcast https://github.com/hazelcast/hazelcast Github-Hazelcast%}
 Hazelcast is a clustering and highly scalable data distribution platform.
 {% endblockquote %}
@@ -16,6 +14,8 @@ Hazelcast is a clustering and highly scalable data distribution platform.
 Hazelcast 提供了分布式数据结构处理和其他In-Memory计算，最简单的，它可以很容易的实现java并发包的ConcurrentHashMap来支持JVM的多线程访问操作，但Haze了cast要做的绝不止这样，以下为Hazelcast的宏伟蓝图：
 {% img [hazelcast architecture] /images/hazelcast-architecture-20160428.png 450 400 Hazelcast架构图 %}
 所以Hazelcast支持众多不同平台体系，并提供了企业定制的高级功能。
+
+<!-- more -->
 
 ## 特性 ##
 Hazelcast是Java编写的开源实现，支持Java6\7\8 SE，并提供弹性，冗余和高性能的特性。

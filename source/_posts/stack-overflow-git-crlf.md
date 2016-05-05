@@ -8,6 +8,8 @@ categories:
 date: 2016-04-13 11:00:25
 ---
 
+warning: LF will be replaced by CRLF in ***
+<!-- more -->
 
 ## 问题描述 ##
 ```bash

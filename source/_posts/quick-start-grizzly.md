@@ -4,13 +4,12 @@ tags:
   - java
   - nio
 categories:
-  - nio
+  - java
 date: 2015-07-01 15:23:50
 ---
 
-
-## 概述 ##
 [Grizzly](https://grizzly.java.net/index.html)是一款用户快速开发NIO的框架组建，简化了NIO的API调用，并提供了基于过滤器的编程方式，为编程人员提供了稳定高效的异步非阻塞解决方案。
+<!-- more -->
 
 ## 特性 ##
 

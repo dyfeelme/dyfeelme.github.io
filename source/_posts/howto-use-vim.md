@@ -8,11 +8,10 @@ categories:
  - linux
 ---
 
-## 简介 ##
-
 {% blockquote baidu http://baike.baidu.com/subview/113188/9338173.htm %}
 Vim是一个类似于Vi的著名的功能强大、高度可定制的文本编辑器，在Vi的基础上改进和增加了很多特性。VIM是纯粹的自由软件。
 {% endblockquote %}
+<!-- more -->
 
 ## 快捷键 ##
 

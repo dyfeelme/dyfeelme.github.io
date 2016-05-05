@@ -8,9 +8,8 @@ categories:
 date: 2015-02-26 14:34:34
 ---
 
-
-## 简介 ##
 [WebHarvest](http://web-harvest.sourceforge.net/)是一款Java实现的页面数据提取工具，可以通过xpath,xquery等xml技术，精准高效灵活的对所关心的数据进行提取。
+<!-- more -->
 
 ## 快速起步 ##
 接下来，我们将通过获取一个网站页面来进行。

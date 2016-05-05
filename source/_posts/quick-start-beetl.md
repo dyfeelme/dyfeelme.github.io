@@ -7,10 +7,10 @@ categories:
 date: 2015-08-04 18:22:32
 ---
 
-## 简介 ##
 {% blockquote Beetl %}
 [Beetl](http://ibeetl.com/guide/beetl.html)是新一代的Java模板引擎，简单易学，超高性能，并且易于整合和扩展。
 {% endblockquote %}
+<!-- more -->
 
 ## 用法 ##
 Beetl的核心是GroupTemplate，创建GroupTemplate需要俩个参数，一个是模板资源加载器，一个是配置类，模板资源加载器Beetl内置了4种，分别是
