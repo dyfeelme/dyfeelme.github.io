@@ -1,4 +1,4 @@
 ---
-title: quick-start-haproxy
+title: 使用haproxy
 tags:
 ---

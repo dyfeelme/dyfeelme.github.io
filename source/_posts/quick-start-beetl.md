@@ -116,3 +116,7 @@ public boolean checkResource(Locale locale) throws Exception {
 </bean>
 
 ```
+
+## 参考 ##
+[ibeetl官方文档](http://ibeetl.com/guide/beetl.html)
+[beetl文档](http://beetl.sourceforge.net/)

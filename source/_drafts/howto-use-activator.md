@@ -1,5 +1,5 @@
 ---
-title: {{ title }}
+title: howto-use-activator
 tags:
 categories:
 ---
